@@ -1,0 +1,81 @@
+.toggle-texto {
+	position: relative;
+	top: 50%;
+	width: 60px;
+	height: 30px;
+	border-radius: 100px;
+	overflow: hidden;
+
+	.fondo,
+	.texto {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.fondo {
+		width: 100%;
+		border-radius: 100px;
+		background-color: #ebf7fc;
+		transition: 0.3s ease all;
+		z-index: 1;
+	}
+
+	.checkbox {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		opacity: 0;
+		cursor: pointer;
+		z-index: 3;
+	}
+
+	.texto {
+		display: flex;
+		align-items: center;
+		z-index: 2;
+
+		&::before {
+			content: "NO";
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			left: 5px;
+			width: 20px;
+			height: 20px;
+			color: #fff;
+			font-size: 10px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1;
+			background-color: #a2d9f1;
+			border-radius: 50%;
+			transition: 0.3s ease all,
+				left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+		}
+	}
+
+	.checkbox:active + .texto::before {
+		width: 34px;
+		border-radius: 100px;
+	}
+
+	.checkbox:checked:active + .texto::before {
+		margin-left: -14px;
+	}
+
+	.checkbox:checked + .texto::before {
+		content: "SI";
+		left: 34px;
+		background-color: #03a9f4;
+	}
+
+	.checkbox:checked ~ .fondo {
+		background-color: #cdeffe;
+	}
+}

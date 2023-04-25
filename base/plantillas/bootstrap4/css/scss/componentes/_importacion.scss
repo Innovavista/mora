@@ -1,0 +1,43 @@
+.card-importacion-resultados{
+    .card-header{
+        padding-bottom: 15px;
+    }
+}
+
+.list-group-importacion{
+    height: 257px;
+    position: relative;
+    .list-group-item{
+        display: flex;
+        min-height: 50px;
+        align-items: center;
+        &:hover{
+            z-index: 0;
+        }
+        &-icon{
+            i{
+                font-size: 24px;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 40px;
+                margin-right: 16px;
+                border-radius: 50%;
+            }
+            &-success i{
+                background: #5cb860;
+                color: #fff;
+            }
+            &-danger i{
+                background: #f55a4e;
+                color: #fff;
+            }
+        }
+        &-content,
+        &-content h3{
+            font-size: 16px;
+            margin: 0;
+            color: #4d4d4d;
+        }
+    }
+}

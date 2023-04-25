@@ -1,0 +1,15 @@
+.campo-borde {
+	display: block;
+	padding: 0.5rem;
+	border-radius: 5px;
+	font-size: 13px;
+	border: 1px solid #dee2ed;
+	margin-bottom: 15px;
+	width: 100%;
+
+	&.disabled {
+		background: #f5f6fa;
+		color: #b3b3b3;
+		user-select: none;
+	}
+}

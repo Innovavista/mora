@@ -1,0 +1,6 @@
+.list-group-striped > .list-group-item{
+	border: 0;
+	&:nth-of-type(odd){
+		background: #f6f6f6;
+	}
+}

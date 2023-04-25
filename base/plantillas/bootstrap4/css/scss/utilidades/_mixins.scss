@@ -1,0 +1,7 @@
+@mixin vendorsBrowser($property, $val){
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -o-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
+}

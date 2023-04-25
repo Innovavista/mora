@@ -1,0 +1,372 @@
+// General
+.informe{
+
+	&-datos .card{
+		height: 100%;
+	}
+
+	&-contenedor{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding-top: 70px;
+	}
+
+	&-totales{
+		font-weight: 500;
+		font-size: 17px;
+		color: #898888;
+	}
+
+	&-texto-gigante,
+	&-texto-grande,
+	&-texto-mediano{
+		font-size: 35px;
+		font-weight: 500;
+		color: #6a6a6a;
+	}
+
+	&-texto-mediano{
+		font-size: 25px;
+	}
+
+	&-texto-gigante{
+		font-size: 62px;
+	}
+
+	&-texto-aclarativo{
+		display: block;
+		line-height: 1.4;
+		font-style: italic;
+		color: #7a7a7a;
+	}
+
+	&-subtitulo{
+		font-size: 18px;
+		color: #686868;
+		margin-bottom: 15px;
+		&-background-lila{
+			padding: 9px 15px;
+			border-radius: 3px;
+			background: #adb1ff;
+			color: #fff;
+		}
+	}
+
+	&-item-datos{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	&-carrusel{
+
+		.owl-nav{
+			text-align: left;
+			padding-left: 20px;
+			margin-bottom: 10px;
+			.owl-prev,
+			.owl-next{
+				width: 24px;
+				height: 24px;
+				margin: 0;
+				font-size: 24px !important;
+				color: #3f3f3f;
+				&:hover{
+					background: #eee;
+					color: #3f3f3f;
+				}
+			}
+			.owl-prev{
+				margin-right: 10px;
+			}
+		}
+
+	}
+
+	&-tabla-contenedor{
+		max-height: 450px;
+	}
+
+	&-tabla th{
+		cursor: pointer;
+		&::after{
+			float: right;
+		}
+	}
+
+}
+
+.informe-dato-dividido{
+	display: flex;
+	text-align: center;
+
+	&-izquierda{
+		display: flex;
+		border-right: 1px solid #e6e6e6;
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-derecha{
+		display: flex;
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-icono{
+		font-size: 36px;
+		margin-right: 20px;
+		color: #537d91;
+	}
+
+	&-valor{
+		font-size: 42px;
+		line-height: 42px;
+		font-weight: 600;
+		color: #464159;
+		&-secundario {
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 32px;
+			color: #7b7b7b;
+		}
+	}
+
+	&-texto{
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #7f7f7f;
+		margin: 0;
+		margin-right: 10px;
+	}
+
+}
+
+.informe-compras-referencia{
+	position: relative;
+	margin: 0 auto;
+	min-height: 200px !important;
+	max-width: 500px;
+	&-porcentaje{
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: 0;
+		bottom: 45px;
+	}
+}
+
+.informe-compras-eventuales{
+	&-icono{
+		font-size: 56px;
+		margin-right: 20px;
+		color: #ff5858;
+	}
+	&-porcentaje{
+		margin-left: 25px;
+	}
+}
+
+.informe-evolucion-costo-referencia{
+	&-icono{
+		font-size: 56px;
+		margin-right: 20px;
+		color: #5590f4;
+	}
+}
+
+.informe-ocupacion-comedores{
+
+	&-filtros-toggle{
+		font-size: 21px;
+		background: transparent;
+		border: 0;
+		color: #838282;
+		cursor: pointer;
+	}
+	&-filtros{
+		transition: all .2s ease;
+		opacity: 1;
+	}
+	&-filtros-oculto{
+		opacity: 0;
+		overflow: hidden;
+		height: 0;
+		padding: 10px;
+	}
+	&-filtros-remover{
+		position: relative;
+		top: -5px;
+	}
+	&-ocupacion{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		text-align: center;
+		height: 100%;
+		font-weight: 600;
+		font-size: 20px;
+		margin-bottom: 20px;
+		box-shadow: 0px 2px 11px rgba(0,0,0,.2);
+		padding: 20px;
+		padding-top: 46px;
+		border-radius: 4px;
+
+		&-horario{
+			font-size: 15px;
+			margin: 0;
+			color: #4e4e4e;
+		}
+
+		&-cabecera{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 15px;
+			padding-top: 10px;
+			margin-bottom: 26px;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.comedor-servicio-llevar-label{
+			font-size: 12px;
+			margin: 0;
+		}
+	}
+
+	&-card-ocupaciones{
+		height: calc(100% - 20px);
+	}
+
+	&-accion{
+		background: transparent;
+		cursor: pointer;
+		border: 0;
+		font-size: 23px;
+		color: #5cb860;
+		&-pc{
+			color: #b7b7b7;
+		}
+	}
+
+	&-pantalla-completa{
+
+		.sidebar{
+			display: none;
+		}
+
+		.main-panel,
+		.sidebar-mini .main-panel{
+			width: 100% !important;
+			margin: 0;
+		}
+
+		.card-filtros{
+			display: none;
+		}
+
+		.navbar{
+			display: none;
+		}
+
+		.main-panel > .content{
+			margin-top: 0;
+			height: 100% !important;
+			min-height: 100vh;
+		}
+
+		.footer{
+			display: none;
+		}
+
+	}
+
+	&-mensaje-vacio{
+		font-size: 20px;
+		font-weight: 500;
+		margin: 60px 0;
+		color: #b7b7b7;
+		text-align: center;
+	}
+
+}
+
+.informe-reserva-detalle{
+	&-accion:hover,
+	&-accion:active,
+	&-accion:focus{
+		color: #fff;
+	}
+}
+
+.informe-consumos{
+	&-materias-primas {
+		.link-top-right {
+			position: absolute;
+			right: 0;
+			top: 10px;
+		}
+	}
+	&-card-grafico .card-body{
+		min-height: 320px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.informe{
+		&-row-full-height{
+			.card{
+				height: 100%;
+				&-body{
+					display: flex;
+					flex-flow: column;
+					height: calc(100% - 38px);
+					justify-content: center;
+				}
+			}
+			[class*="col-"]{
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+}
+
+@media (min-width: 1460px) {
+
+	.informe{
+		&-tabla-contenedor{
+			overflow-x: hidden;
+		}
+		&-carrusel .owl-nav{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		}
+	}
+
+}
+
+@media (min-width: 1560px) {
+
+	.informe{
+		&-col-xl-3{
+			flex: 25%;
+			-ms-flex: 0 0 25%;
+			max-width: 25%;
+		}
+	}
+
+}

@@ -1,0 +1,159 @@
+.presentacion-alta{
+    margin-bottom: 18px;
+	&-togglebutton{
+		display: inline-block;
+		&-contenedor{
+			margin-top: 15px;
+			.label-chico{
+				position: relative;
+				top: -3px;
+				margin: 0;
+			}
+			.zmdi{
+				font-size: 18px;
+				color: #ff9797;
+				margin-right: 3px;
+			}
+		}
+	}
+}
+.presentacion-listado{
+	position: relative;
+	margin-top: 15px;
+	animation-duration: .5s;
+	&-nombre{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #f2f2f2;
+		padding: 10px;
+		border-radius: 6px;
+		box-shadow: 0px 1px 5px rgba(0,0,0,.2);
+		font-size: 14px;
+		color: #9f9f9f;
+		margin: 0;
+	}
+	&-hijo{
+		margin-top: 15px;
+	}
+	&-hijos{
+		padding-left: 30px;
+	}
+	&-remover,
+	&-editar{
+		border: 0;
+		background: transparent;
+		font-size: 22px;
+		color: #ccc;
+		cursor: pointer;
+		padding: 2px;
+		&:hover{
+			color: #fa5858;
+		}
+		&:disabled:hover{
+			cursor: default;
+			color: #ccc;
+		}
+	}
+	&-remover{
+		margin-left: 10px;
+	}
+	&-editar{
+		&:hover{
+			color: #666efe;
+		}
+	}
+	&-datos{
+		display: flex;
+		align-items: center;
+		max-width: calc(100% - 60px);
+		&-labels{
+			position: absolute;
+			right: 85px;
+		}
+	}
+	&-datos-referencia,
+	&-datos-venta{
+		display: inline-block;
+		padding: 0px 14px;
+		margin-left: 10px;
+		max-height: 19px;
+		font-size: 11px;
+		color: #fff;
+		font-weight: 600;
+		line-height: 19px;
+		border-radius: 8px;
+	}
+	&-datos-referencia{
+		background: #7ac0f8;
+	}
+	&-datos-venta{
+		background: #26a69a;
+	}
+}
+.presentacion-nombre{
+	color: #666;
+	&-envase,
+	&-cantidad,
+	&-unidad{
+		color: #565656;
+	}
+	&-marca{
+		color: #7f86ff;
+	}
+	&-presentacion{
+		display: block;
+		margin-left: 10px;
+		font-size: 12px;
+	}
+}
+.presentaciones-cargadas > .presentacion-listado:first-child{
+	margin-top: 0;
+}
+.presentaciones-vacio{
+	text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: #d5d5d5;
+}
+
+.presentacion-edicion{
+	animation-duration: .5s;
+	&-envase > .bootstrap-select > .dropdown-toggle,
+	&-marca > .bootstrap-select > .dropdown-toggle{
+		display: none;
+	}
+	&-presentacion{
+		text-align: center;
+		background-color: #fff;
+		background-image: url('/img/pattern1.png');
+		border-radius: 6px;
+		margin-bottom: 15px;
+		padding: 15px;
+		box-shadow: 1px 4px 15px rgba(0,0,0,.2);
+		&-nombre{
+			font-size: 18px;
+			margin: 0;
+			color: #727272;
+		}
+	}
+}
+
+.presentacion-modal-alta{
+	.envase-formulario button[type=submit],
+	.marca-formulario button[type=submit]{
+		display: none;
+	}
+}
+
+.presentacion-cabecera-toggle{
+	background: none;
+	border: 0;
+	cursor: pointer;
+	font-size: 22px;
+	padding: 3px 10px;
+	color: #999;
+	&:hover{
+		color: #6970ff;
+	}
+}

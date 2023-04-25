@@ -1,0 +1,66 @@
+/*******************************************************************************
+	Bootstrap Toggle
+*******************************************************************************/
+.toggle{
+	margin: 0px !important;
+}
+.toggle-group .btn{
+	display: block;
+	position: absolute;
+	margin: 0px;
+	padding: 5px;
+	padding-right: 12px;
+}
+.toggle-group .btn.btn-xs{
+	padding-left: 5px;
+	padding-right: 12px;
+}
+.toggle-handle{
+	position: relative !important;
+	margin: 0 auto !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	height: 100% !important;
+	width: 0 !important;
+	border-width: 0 1px !important;
+}
+/*******************************************************************************
+	Fin Bootstrap Toggle
+*******************************************************************************/
+/*******************************************************************************
+	Bootstrap select
+*******************************************************************************/
+.bootstrap-select.btn-group{
+	margin: 0px;
+}
+.bootstrap-select > .dropdown-toggle{
+	background: none;
+	color: #758396;
+	padding: 6px 0px;
+	box-shadow: none;
+}
+.bootstrap-select > .dropdown-toggle:hover,
+.bootstrap-select > .dropdown-toggle:focus{
+	color: #758396;
+	outline: none;
+	box-shadow: none;
+    background: #eee;
+}
+.bootstrap-select .dropdown-menu li > a{
+	color: #758396;
+}
+.bootstrap-select .dropdown-menu li.active > a,
+.bootstrap-select .dropdown-menu li.selected > a{
+	color: #fff;
+}
+
+.bootstrap-select .dropdown-menu li.selected > a {
+	background-color: #337ab7;
+}
+
+.bootstrap-select .form-group > select{
+	display: none;
+}
+/*******************************************************************************
+	Fin bootstrap select
+*******************************************************************************/

@@ -1,0 +1,40 @@
+/**, :before, :after {
+	transition-property: none !important;
+	transform: none !important;
+	animation: none !important;
+}
+*/
+.punto-de-venta-tabla-linea.con-advertencias td {
+    border-bottom: 0 !important;
+}
+
+.punto-de-venta-tabla-linea-advertencias td {
+    border-top: 0 !important;
+    padding-top: 0;
+}
+
+.punto-de-venta-columna-total {
+    transition: all 0.5s ease-out;
+}
+
+.modal .table tr:focus-within {
+    background: #eee;
+}
+
+#modal-clientes-alta .input-group-btn {
+    display: none;
+}
+
+.table-fixed {
+    table-layout: fixed;
+}
+
+.cobro {
+    position: relative;
+}
+
+.cobro-quitar {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+}

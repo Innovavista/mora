@@ -1,0 +1,197 @@
+/*
+    Created on : 23/09/2021, 12:43:41
+    Author     : Martín Ghiotti
+*/
+
+.seccion-comprobante-compra {
+
+	.tabla-comprobantes-lineas {
+
+		table {
+
+			.tabla-columna {
+
+				&-cantidad-comprobante, &-precio, &-descuento {
+					width: 140px !important;
+				}
+
+			}
+
+			.input-cantidad, .input-precio, .input-porcentaje {
+				float: right;
+			}
+
+		}
+
+	}
+
+}
+
+.seccion-comprobante-compra, .seccion-remito-compra {
+
+	.input-letra, .input-total {
+		width: 180px;
+	}
+
+	.input-porcentaje {
+		width: 78px !important;
+	}
+
+	.input-precio {
+		width: 96px !important;
+	}
+
+	#select-deposito-remito {
+		height: 45px;
+	}
+
+	.tabla-comprobantes-lineas {
+
+		.form-input-custom-input {
+			width: 80px;
+		}
+
+		table {
+			width: 100%;
+			table-layout: fixed;
+			border-collapse: collapse;
+
+			.tabla-columna {
+
+				&-articulo {
+					width: 120px;
+				}
+
+				&-cantidad, &-cantidad .input {
+					width: 78px;
+				}
+
+				&-total {
+					width: 120px;
+				}
+
+				&-linea-orden, &-orden {
+					width: 56px;
+				}
+
+				&-deposito {
+					width: 225px;
+				}
+
+				&-pendiente {
+					width: 54px;
+				}
+
+				&-operaciones {
+					width: 97px;
+				}
+
+				&-alerta {
+					width: 42px;
+				}
+
+			}
+
+			.alerta-excedente {
+				color: #fa5858;
+				font-size: 18px;
+				margin-left: 5px;
+			}
+
+			.tabla-quitar-linea {
+				width: 30px;
+			}
+		}
+
+	}
+
+	.tabla-impuestos {
+
+		table {
+			.columna-impuesto {
+
+				&-tipo {
+					width: 225px;
+				}
+
+				&-impuesto {
+					width: 225px;
+				}
+
+				&-observaciones {
+					width: 225px;
+				}
+
+				&-total {
+					width: 150px;
+				}
+
+			}
+
+			.form-input-custom-input {
+				width: 100%;
+			}
+
+			.input-total input {
+				width: 150px !important;
+			}
+		}
+	}
+
+}
+
+.seccion-remito-compra {
+
+	.remito-deposito .bootstrap-select > select {
+		left: 0 !important;
+	}
+
+	table {
+
+		.tabla-columna {
+
+			&-articulo {
+				width: 315px !important;
+			}
+
+			&-cantidad input {
+				width: 85px !important;
+			}
+
+		}
+
+	}
+
+}
+
+.seccion-remito-interno {
+
+	.remito-linea-cantidad {
+		width: 50px !important;
+	}
+
+	.remito-interno-contenedor-firma {
+		canvas {
+			border: 1px solid black;
+			margin: 10px 0;
+		}
+	}
+
+}
+
+.remito-interno-pdf {
+
+	&-anulado {
+		position: fixed;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 28pt;
+		font-weight: 700;
+		top: 400px;
+		left: 0;
+		right: 0;
+		opacity: 0.3;
+		color: red;
+	}
+
+}

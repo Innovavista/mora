@@ -1,0 +1,256 @@
+.servicio-reserva-seleccion {
+	position: relative;
+	width: calc(100% - 20px);
+	max-width: 1200px;
+	background: #fff;
+	margin: 0 auto;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	box-shadow: 0px -4px 15px rgba(#000, 0.06);
+	touch-action: none;
+	height: calc(70vh + 20px);
+	transition: height 0.25s ease-in-out;
+
+	&.expandido {
+		height: 95vh;
+	}
+
+	&-contenedor {
+		display: flex;
+		position: fixed;
+		align-items: stretch;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 9999;
+		@include animacion(reservaSeleccionShow);
+	}
+
+	&-contenedor.ocultar {
+		@include animacion(reservaSeleccionHide);
+	}
+
+	&-cerrar {
+		position: absolute;
+		top: 6px;
+		right: 7px;
+		background: transparent;
+		border: 0;
+		font-size: 25px;
+		color: #dcdcdc;
+		cursor: pointer;
+
+		&:hover {
+			color: #ffcccc;
+		}
+	}
+
+	&-top {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: column;
+		padding: 20px;
+		padding-bottom: 0px;
+
+		&-barra {
+			width: 120px;
+			height: 9px;
+			margin-bottom: 20px;
+			background: #e4e4e4;
+			border-radius: 10px;
+		}
+	}
+
+	&-contenido {
+		padding: 20px;
+		padding-top: 0;
+	}
+
+	&-titulo {
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 30px;
+		text-align: center;
+		color: #484f66;
+		user-select: none;
+
+		> span:first-child {
+			text-transform: capitalize;
+		}
+	}
+
+	&-composiciones {
+		display: flex;
+		align-items: center;
+		justify-content: stretch;
+		margin-bottom: 20px;
+	}
+
+	&-productos {
+		display: flex;
+		justify-content: stretch;
+		flex-wrap: wrap;
+		max-height: calc(55vh - 155px);
+		overflow: hidden;
+		overflow-y: auto;
+		min-height: 120px;
+	}
+
+	&.expandido &-productos {
+		max-height: calc(95vh - 165px);
+	}
+
+	&-producto {
+		display: flex;
+		flex-flow: column;
+		position: relative;
+		border: 1px solid #e6e2e2;
+		border-radius: 10px;
+		width: 115px;
+		margin: 0 6px;
+		margin-bottom: 12px;
+		overflow: hidden;
+		cursor: pointer;
+		-webkit-animation-duration: 0.3s;
+		animation-duration: 0.3s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: rotateIn;
+		animation-name: rotateIn;
+
+		&-imagen {
+			width: 100%;
+			max-height: 65px;
+			object-fit: cover;
+		}
+
+		&-imagen-placeholder {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 65px;
+			background: #eee;
+			font-size: 28px;
+			color: #9299a2;
+		}
+
+		&-cuerpo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-grow: 1;
+			padding: 14px 5px;
+			text-align: center;
+			font-size: 11px;
+			font-weight: 500;
+			color: #484f66;
+			line-height: 16px;
+		}
+
+		&:hover {
+			border-color: #62f1cd;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.servicio-reserva-seleccion {
+		width: auto;
+		width: 450px;
+		border-radius: 15px;
+		box-shadow: none;
+		height: 440px;
+		overflow: hidden;
+		cursor: default !important;
+
+		&.expandido {
+			height: 440px;
+		}
+
+		&-top {
+			padding-top: 30px;
+			margin-bottom: 30px;
+			background: #f7f7f7;
+			border-bottom: 1px solid #eff0f3;
+		}
+
+		&-top-barra {
+			display: none;
+		}
+
+		&-cerrar {
+			top: 10px;
+			right: 10px;
+		}
+
+		&-contenedor {
+			position: absolute;
+			left: auto;
+			width: auto;
+			bottom: auto;
+			animation-duration: 0.3s;
+			box-shadow: 0px -4px 15px rgba(#000, 0.12);
+		}
+
+		&-contenedor.ocultar {
+			transform-origin: left bottom;
+			animation-duration: 0.3s;
+		}
+
+		&-productos {
+			max-height: 290px;
+			justify-content: center;
+		}
+
+		&-producto {
+			width: 120px;
+		}
+	}
+}
+
+@keyframes reservaSeleccionShow {
+	0% {
+		bottom: -200px;
+	}
+	100% {
+		bottom: 0;
+	}
+}
+
+@keyframes reservaSeleccionHide {
+	0% {
+		bottom: 0;
+	}
+	100% {
+		bottom: -60vh;
+	}
+}
+
+@media (min-width: 992px) {
+	@keyframes reservaSeleccionShow {
+		0% {
+			transform: scale(0.65);
+			border-radius: 50%;
+			overflow: hidden;
+			transform-origin: left;
+		}
+		100% {
+			border-radius: 15px;
+			overflow: auto;
+			transform: scale(1);
+		}
+	}
+
+	@keyframes reservaSeleccionHide {
+		0% {
+			transform: scale(1) translateX(0);
+			transform-origin: left;
+		}
+		100% {
+			border-radius: 50%;
+			transform: scale(0) translateX(-120px);
+			opacity: 0;
+		}
+	}
+}

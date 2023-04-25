@@ -1,0 +1,47 @@
+.informe-tarjeta{
+	height: 100%;
+	border-top: 5px solid #39a1f4;
+
+	&-contenedor{
+		margin-bottom: 20px;
+	}
+
+	&-body{
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		height: 100%;
+		align-items: center;
+		text-align: center;
+	}
+
+	&-titulo{
+		font-size: 19px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		color: #555;
+	}
+
+	&-icono{
+		display: inline-flex;
+		width: 48px;
+		height: 48px;
+		align-items: center;
+		justify-content: center;
+		background: #d4eafc;
+		font-size: 24px;
+		border-radius: 50%;
+		margin-bottom: 20px;
+		color: #39a1f4;
+	}
+
+	&-descripcion{
+		margin-bottom: 30px;
+		color: #929292;
+	}
+
+	&-boton{
+		margin: 0;
+	}
+
+}

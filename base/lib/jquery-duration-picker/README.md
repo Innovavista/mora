@@ -1,0 +1,2 @@
+Plugin obtenido de http://www.jqueryscript.net/time-clock/Minimal-Duration-Picker-Plugin-For-jQuery-Bootstrap.html
+El archivo con sufijo custom, es porque se modificó el archivo original para soportar nuevas características. (Como poder esconder las horas y los minutos)

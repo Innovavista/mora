@@ -1,0 +1,80 @@
+.semielaborado-listado,
+.plato-listado{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+	margin-bottom: 15px;
+	&-contenido{
+		display: flex;
+		align-items: center;
+	}
+	&-imagen-contenedor{
+		position: relative;
+		margin-right: 20px;
+	}
+	&-imagen{
+		border-radius: 50%;
+		max-width: 50px;
+		height: auto;
+		box-shadow: 0px 4px 5px rgba(0,0,0,.3);
+	}
+	&-imagen-placeholder{
+		width: 50px;
+		height: 50px;
+		font-size: 23px;
+		text-align: center;
+		line-height: 50px;
+		border-radius: 50%;
+		background: #d8dafe;
+		color: #6a71ff;
+		box-shadow: 0px 4px 5px rgba(0,0,0,.3);
+	}
+	&-imagen-placeholder-mini{
+		width: 25px;
+		height: 25px;
+		margin-left: 13px;
+		font-size: 10px;
+		line-height: 30px;
+		text-align: center;
+		border-radius: 50%;
+		background: #d8dafe;
+		color: #6a71ff;
+		box-shadow: 0px 4px 5px rgba(0,0,0,.3);
+	}
+	&-nombre{
+		font-size: 16px;
+		margin-bottom: 3px;
+		color: #4d4d4d;
+		&-mp {
+			font-size: 13px;
+			padding-left: 12px;
+			margin-bottom: 0;
+		}
+	}
+	&-costo{
+		color: #474747;
+		&-mp {
+			padding-left: 12px;
+		}
+		&-porcentaje {
+			color: #5cb860;
+			font-weight: bold;
+			margin-left: 10px;
+		}
+	}
+	.alerta-indicador{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin: 0;
+		background: rgba(255,255,255,.7);
+		width: 18px;
+		height: 18px;
+		line-height: 18px;
+		font-size: 11px;
+	}
+}

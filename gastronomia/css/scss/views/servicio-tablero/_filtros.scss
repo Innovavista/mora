@@ -1,0 +1,88 @@
+.servicio-tablero-filtros {
+	background: #fff;
+	border-radius: 20px;
+	border: 2px solid transparent;
+
+	&.fixed {
+		position: fixed;
+		top: 15px;
+	}
+
+	&-cabecera {
+		padding: 15px 20px;
+		background: #f5f6fa;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+	}
+
+	&-titulo {
+		margin: 0;
+		font-size: 16px;
+		color: #606573;
+	}
+
+	&-top {
+		display: flex;
+		align-items: center;
+		min-height: 55px;
+		padding: 10px 22px;
+		padding-top: 0;
+		padding-right: 12px;
+
+		&-texto {
+			display: block;
+			font-size: 13px;
+			color: #606573;
+			padding-left: 22px;
+		}
+	}
+
+	&-clientes.show-tick > .dropdown-toggle {
+		position: relative;
+		padding: 7px 10px;
+	}
+
+	label {
+		color: #636f8b;
+	}
+
+	.form-group {
+		margin-top: 20px;
+	}
+
+	&-contenido {
+		padding: 20px;
+		padding-top: 0;
+		margin: 0;
+	}
+
+	&-pie {
+		padding: 15px 20px;
+	}
+
+	&-boton {
+		display: block;
+		width: 100%;
+		border: 0;
+		background: #5cd66a;
+		padding: 15px;
+		font-size: 13px;
+		color: #fff;
+		border-radius: 10px;
+		font-weight: 500;
+		cursor: pointer;
+		transition: 0.2s ease background;
+
+		&:not([disabled]):hover {
+			background: #33cc45;
+		}
+
+		&:disabled {
+			background: #747a8b;
+			opacity: 0.3;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

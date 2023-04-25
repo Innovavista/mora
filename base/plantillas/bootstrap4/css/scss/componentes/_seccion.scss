@@ -1,0 +1,23 @@
+.seccion-custom{
+	.card-title{
+		color: #797979;
+	}
+	.form-input-custom-select .dropdown-toggle{
+		color: #797979 !important;
+	}
+}
+
+.seccion-custom-header-title{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 15px;
+	& .content-title {
+		color: #9b9b9b;
+		font-weight: 500;
+		font-size: 19px;
+	}
+}

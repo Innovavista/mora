@@ -1,0 +1,1098 @@
+body.layout-base {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.body-iframe {
+    padding-top: 0px;
+}
+
+.checkbox-lista {
+    margin-bottom: 40px;
+}
+
+.checkbox-lista label.checkbox {
+    padding-left: 20px;
+}
+
+fieldset.form-control {
+    height: auto;
+    width: auto;
+    border: 0px;
+    padding: 0px;
+    background: none;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.nav-form {
+    margin-bottom: 20px;
+}
+
+.nav-tabs > li.has-error > a {
+    color: #a94442;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #a94442;
+    border-bottom-color: transparent;
+}
+
+form,
+.form-group {
+    position: relative
+}
+
+.tab-btn-group {
+    margin-bottom: 0px;
+}
+
+.dataTable {
+    width: 100% !important;
+}
+
+.modal.fade.in {
+    top: 0;
+}
+
+.form-control + .alert {
+    margin-top: 10px;
+}
+
+/*******************************************************************************
+	Ayudantes
+*******************************************************************************/
+.sin-padding-superior {
+    padding-top: 0px !important;
+}
+
+.sin-padding-inferior {
+    padding-bottom: 0px !important;
+}
+
+.sin-padding-lateral {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.sin-padding-izquierdo {
+    padding-left: 0px !important;
+}
+
+.sin-padding-derecho {
+    padding-right: 0px !important;
+}
+
+.sin-margin-superior {
+    margin-top: 0px !important;
+}
+
+.sin-margin-lateral {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.sin-margin-izquierdo {
+    margin-left: 0px !important;
+}
+
+.sin-margin-derecho {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+input[type=number].sin-flechas::-webkit-inner-spin-button,
+input[type=number].sin-flechas::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.opacity-0,
+.opacidad-0 {
+    opacity: 0 !important;
+}
+
+.opacity-25,
+.opacidad-25 {
+    opacity: 0.25 !important;
+}
+
+.opacity-50,
+.opacidad-50 {
+    opacity: 0.5 !important;
+}
+
+.opacity-75,
+.opacidad-75 {
+    opacity: 0.75 !important;
+}
+
+/*******************************************************************************
+	Fin ayudantes
+*******************************************************************************/
+/*******************************************************************************
+	Módulos
+*******************************************************************************/
+/*********************************************************************
+	Firma innovavista
+*********************************************************************/
+a.innovavista {
+    position: relative;
+    top: -10px;
+}
+
+/*********************************************************************
+	Fin Firma innovavista
+*********************************************************************/
+/*********************************************************************
+	Ingreso
+*********************************************************************/
+.login {
+    position: relative;
+}
+
+.login-recuperar {
+    display: block;
+    margin-top: 20px;
+}
+
+/*********************************************************************
+	Fin ingreso
+*********************************************************************/
+/*********************************************************************
+	Módulo Alerta
+*********************************************************************/
+.alerta {
+    width: 100%;
+    top: 46px;
+    margin: 0 auto;
+    z-index: 5000;
+}
+
+.modal .alerta {
+    position: absolute;
+    width: 100% !important;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px !important;
+    box-shadow: none;
+}
+
+.container .alerta {
+    width: 100%;
+}
+
+.alert-sombra {
+    box-shadow: 0px 4px 4px #555;
+}
+
+/*********************************************************************
+	Fin Módulo Alerta
+*********************************************************************/
+/*********************************************************************
+	Módulo Orden
+*********************************************************************/
+.orden-elemento {
+    cursor: move;
+    margin-bottom: 20px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.orden-placeholder {
+    border-radius: 5px;
+    border: 2px dashed #bbb;
+    opacity: 0.1;
+}
+
+/*********************************************************************
+	Fin  Orden
+*********************************************************************/
+/*********************************************************************
+	Menú grilla
+*********************************************************************/
+.menu-grilla-link {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.menu-grilla-icono {
+    font-size: 60px;
+}
+
+/*********************************************************************
+	Fin menú grilla
+*********************************************************************/
+/*********************************************************************
+	Módulo Contenedor
+*********************************************************************/
+.agregable-contenedor {
+    position: relative;
+}
+
+.contendor-botones {
+    right: 0px;
+    top: 4px;
+    position: absolute;
+}
+
+@-moz-document url-prefix() {
+    .contendor-botones {
+        top: -47px;
+    }
+}
+
+/*********************************************************************
+	Fin  Contenedor
+*********************************************************************/
+/*********************************************************************
+	Inicio Agregable
+*********************************************************************/
+.agregable-elemento {
+    position: relative;
+}
+
+.agregable-btn-group {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.agregable-btn-group .btn {
+    float: left;
+    display: inline;
+}
+
+.fielset-archivos .agregable-btn-group,
+.fielset-imagenes .agregable-btn-group {
+    position: absolute;
+    right: 32px;
+    top: 46px;
+    padding: 0px 5px;
+}
+
+.fielset-archivos .agregable-elemento,
+.fielset-imagenes .agregable-elemento {
+    padding: 0 15px;
+    border: 1px solid transparent;
+}
+
+.agregable-contenedor .uploader-btn-eliminar {
+    display: none;
+}
+
+/*******************************************************************************
+	Fin Agregable
+*******************************************************************************/
+/*********************************************************************
+	Inicio ListaDoble
+*********************************************************************/
+.listaDoble-panel {
+    position: relative;
+}
+
+.listaDoble-controles {
+    position: absolute !important;
+    right: 10px;
+    top: 4px;
+    padding-right: 7px !important;
+}
+
+.listaDoble-busqueda {
+    border: 1px solid #bce8f1;
+    width: 40%;
+    height: 28px;
+    padding: 0px 12px;
+    float: right;
+}
+
+.listaDoble-nuevo {
+    height: 28px;
+    height: 26px;
+    line-height: 26px;
+    padding-top: 0px;
+}
+
+.listaDoble-panel .panel-body {
+    padding: 0px;
+}
+
+.listaDoble-panel ul {
+    height: 200px;
+    padding: 10px;
+    list-style: none;
+    list-style-position: outside;
+    overflow: auto;
+}
+
+.listaDoble-panel ul li {
+    counter-increment: lista-ordenada;
+    border: 1px solid #ccc;
+    padding: 0px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    cursor: move;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+/***********************************************************
+	ListaDoble - Modal
+***********************************************************/
+.modal .listaDoble-panel ul li {
+    margin-bottom: 3px;
+}
+
+.modal .listaDoble-panel ul {
+    height: 140px;
+    margin-bottom: 0;
+}
+
+.modal .listaDoble-panel .panel-heading {
+    padding: 4px 15px;
+}
+
+.modal .listaDoble-panel .panel-body {
+    padding: 5px 15px;
+}
+
+.modal .listaDoble-busqueda {
+    top: 1px;
+    height: 23px;
+    font-size: 14px;
+}
+
+/***********************************************************
+	Fin ListaDoble - Modal
+***********************************************************/
+.panel.form-control {
+    padding: 0px;
+    height: auto;
+}
+
+/*********************************************************************
+	Fin ListaDoble
+*********************************************************************/
+
+/*********************************************************************
+	Inicio Bootstrap Select
+*********************************************************************/
+.bootstrap-select .filter-option .text-muted {
+    display: none;
+}
+
+.bootstrap-select .dropdown-menu .text-muted {
+    display: block;
+}
+
+.bootstrap-select-mobil {
+    width: 100% !important;
+    height: auto;
+}
+
+.bootstrap-select-mobil-modal-body {
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.bootstrap-select-mobil-menu {
+    overflow: auto !important;
+    position: relative !important;
+    min-width: 100% !important;
+    border-top: none !important;
+    display: block !important;
+}
+
+/*********************************************************************
+	Fin Bootstrap Select
+*********************************************************************/
+/*********************************************************************
+	Fin ListaDoble
+*********************************************************************/
+
+/*********************************************************************
+	Inicio Pad Dibujo
+*********************************************************************/
+.pad-dibujo-control {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.pad-dibujo-dibujo {
+    height: 150px;
+    background-color: #fafafa;
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.pad-dibujo-dibujo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.pad-dibujo-acciones {
+    padding: 5px;
+    text-align: center;
+}
+
+.pad-dibujo-abrir {
+
+}
+
+.pad-dibujo-pad {
+    position: absolute;
+    font-size: 10px;
+    width: 700px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -200px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+    border-radius: 4px;
+}
+
+.pad-dibujo-pad button {
+    transition: none;
+    margin-left: 20px;
+}
+
+.pad-dibujo-pad:before, .pad-dibujo-pad:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 40%;
+    height: 10px;
+    left: 20px;
+    bottom: 10px;
+    background: transparent;
+    -webkit-transform: skew(-3deg) rotate(-3deg);
+    -moz-transform: skew(-3deg) rotate(-3deg);
+    -ms-transform: skew(-3deg) rotate(-3deg);
+    -o-transform: skew(-3deg) rotate(-3deg);
+    transform: skew(-3deg) rotate(-3deg);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.pad-dibujo-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+}
+
+.pad-dibujo-pad:after {
+    left: auto;
+    right: 20px;
+    -webkit-transform: skew(3deg) rotate(3deg);
+    -moz-transform: skew(3deg) rotate(3deg);
+    -ms-transform: skew(3deg) rotate(3deg);
+    -o-transform: skew(3deg) rotate(3deg);
+    transform: skew(3deg) rotate(3deg);
+}
+
+.pad-dibujo-pad--btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+.pad-dibujo-pad--body {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 40px;
+    bottom: 80px;
+    border: 1px solid #f4f4f4;
+}
+
+.pad-dibujo-pad--body canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+}
+
+.pad-dibujo-pad--footer {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    height: 60px;
+}
+
+.pad-dibujo-pad--footer .description {
+    color: #C3C3C3;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.pad-dibujo-pad--footer .left,
+.pad-dibujo-pad--footer .right {
+    position: absolute;
+    bottom: 0;
+}
+
+.pad-dibujo-pad--footer .left {
+    left: 0;
+}
+
+.pad-dibujo-pad--footer .right {
+    right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .pad-dibujo-pad {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        min-width: 250px;
+        min-height: 140px;
+        margin: 5%;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .pad-dibujo-pad {
+        margin: 10%;
+    }
+}
+
+@media screen and (max-height: 320px) {
+    .pad-dibujo-pad--body {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 32px;
+    }
+
+    .pad-dibujo-pad--footer {
+        left: 20px;
+        right: 20px;
+        bottom: 4px;
+        height: 28px;
+    }
+
+    .pad-dibujo-pad--footer .description {
+        font-size: 1em;
+        margin-top: 1em;
+    }
+}
+
+
+/*********************************************************************
+	Fin Pad Dibujo
+*********************************************************************/
+
+/*********************************************************************
+	Inicio Duracion Element
+*********************************************************************/
+.bdp-block [id$=-label] {
+    display: inline-block;
+    padding: 0px 10px 0px 3px;
+}
+
+/*********************************************************************
+	Fin Duracion Element
+*********************************************************************/
+
+.modal-esperar {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.modal-overflow .modal-body {
+    overflow: visible;
+}
+
+/*******************************************************************************
+	Fin Módulos
+*******************************************************************************/
+/*********************************************************************
+	Botones
+*********************************************************************/
+.btn-agrandable {
+    width: 26px;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    padding: 1px 5px;
+}
+
+.btn-agrandable:hover,
+.btn-agrandable:focus {
+    width: 75px;
+    opacity: 1;
+}
+
+/*******************************************************************************
+	Fin Botones
+*******************************************************************************/
+
+.text-feedback {
+    height: 0px;
+    position: relative;
+    font-size: 11px;
+    color: #aaa;
+    right: 5px;
+    bottom: 15px;
+    float: right;
+    overflow: visible;
+}
+
+.mce-wordcount {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    padding: 3px;
+}
+
+/*******************************************************************************
+						fieldset-table
+	Muentra un agregable collection como una tabla, sin repetir los label,
+	reduciondo paddings y márgenes
+*******************************************************************************/
+.fieldset-table {
+    margin-bottom: 15px;
+}
+
+.fieldset-table .coleccion-elemento:not(:first-of-type) :not(.checkbox) > label {
+    display: none;
+}
+
+.fieldset-table .coleccion-elemento {
+    padding-bottom: 0px;
+}
+
+.fieldset-table .agregable-elemento {
+    padding-bottom: 10px;
+}
+
+.fieldset-table .coleccion-elemento:not(:first-of-type) {
+    padding-top: 10px;
+}
+
+.fieldset-table .coleccion-contenedor {
+    margin-bottom: 15px;
+}
+
+.fieldset-table.coleccion-contenedor .coleccion-elemento {
+    margin-bottom: 0px;
+}
+
+.fieldset-table.agregable-contenedor .contendor-botones {
+    margin-top: 20px;
+}
+
+.fieldset-table .agregable-elemento .row .form-group:last-child {
+    padding-right: 60px;
+}
+
+.fieldset-table .coleccion-elemento .form-group {
+    margin-bottom: 0px;
+}
+
+.fieldset-table .agregable-elemento:first-of-type .agregable-btn-group {
+    top: 31px;
+}
+
+.fieldset-table .agregable-btn-group {
+    top: 11px;
+}
+
+/*******************************************************************************
+	Fin fieldset-table
+*******************************************************************************/
+/*******************************************************************************
+	Pagina 404
+*******************************************************************************/
+.title404 {
+    font-size: 8em;
+    text-shadow: #ccc 4px 4px 4px;
+}
+
+.subtitle404 {
+    text-shadow: #ccc 1px 1px 1px;
+    border-bottom: 3px solid black;
+    padding-bottom: 0.4em;
+}
+
+/*******************************************************************************
+	Fin pagina 404
+*******************************************************************************/
+.fieldset-embebido {
+    position: relative;
+    padding: 15px;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.fieldset-embebido > legend {
+    position: absolute;
+    top: -16px;
+    display: inline-block;
+    padding: 0px 7px;
+    width: auto;
+    border-bottom: 0px none;
+    background-color: white;
+}
+
+input[data-nombre-dia] {
+    padding-left: 100px;
+}
+
+.hasDatepicker {
+    cursor: default;
+}
+
+.datepicker-icono {
+    position: absolute;
+    top: 35px;
+    right: 24px;
+    cursor: default;
+}
+
+.fieldset-table .coleccion-elemento:not(:first-of-type) .datepicker-icono {
+    top: 15px;
+}
+
+.ui-widget-content .ui-state-hover-mes a,
+.ui-state-hover-mes a {
+    border: 1px solid #0073ea;
+    background: #0073ea url("images/ui-bg_highlight-soft_25_0073ea_1x100.png") 50% 50% repeat-x;
+    font-weight: bold;
+    color: #fff
+}
+
+.imagen-visualizar-descargar {
+    opacity: 0;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+/*********************************************************************
+	Imagen
+*********************************************************************/
+.imagen-visualizar {
+    position: relative;
+    display: inline-block;
+}
+
+.imagen-visualizar:hover .imagen-visualizar-descargar {
+    opacity: 1;
+}
+
+.comentario-lista .imagen-visualizar {
+    float: left;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.comentario-lista .imagen-visualizar img {
+    vertical-align: baseline;
+}
+
+/*********************************************************************
+	Fin imagen
+*********************************************************************/
+/*********************************************************************
+	Archivos
+*********************************************************************/
+.archivo-descargar {
+    max-width: 200px;
+    height: 200px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.comentario-lista .archivo-descargar {
+    float: left;
+    display: inline-block;
+    max-width: 100px;
+    height: 100px;
+    padding-top: 30px;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+/*********************************************************************
+	Fin archivos
+*********************************************************************/
+/*******************************************************************************
+	Inicio Dropdown
+*******************************************************************************/
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu.hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+/*******************************************************************************
+	Fin Dropdown
+*******************************************************************************/
+/*******************************************************************************
+	Ini Errores en formulario
+*******************************************************************************/
+.has-error p.help-block {
+    margin-top: 17px;
+}
+
+/*******************************************************************************
+	Fin Errores en formulario
+*******************************************************************************/
+/*******************************************************************************
+	Login
+*******************************************************************************/
+body.login {
+    padding-top: 80px;
+}
+
+.login-logo > img {
+    width: auto;
+    max-height: 20px;
+}
+
+/*******************************************************************************
+	Fin login
+*******************************************************************************/
+/*******************************************************************************
+	Esclavo / maestro
+*******************************************************************************/
+.esclavo-mensaje,
+.esclavo-mensaje-ajax,
+.esclavo-mensaje-error,
+.maestro-ajax-icono {
+    display: none;
+}
+
+.esclavo-desactivar > .esclavo-mensaje {
+    display: block;
+}
+
+.esclavo-ajax > .esclavo-mensaje-ajax {
+    display: block;
+}
+
+.esclavo-error > .esclavo-mensaje-error {
+    display: block;
+}
+
+.esclavo-ajax > .esclavo-mensaje-error,
+.esclavo-ajax > .esclavo-mensaje {
+    display: none;
+}
+
+.maestro-ajax-icono.mostrar {
+    display: inline-block;
+}
+
+/***********************************************************
+	Esclavo / maestro - ListaDoble
+***********************************************************/
+.listaDoble-contenedor.esclavo-desactivar > div {
+    display: none !important;
+}
+
+.listaDoble-contenedor.esclavo-desactivar > .esclavo-mensaje,
+.listaDoble-contenedor.esclavo-desactivar > .esclavo-mensaje-ajax,
+.listaDoble-contenedor.esclavo-desactivar > .esclavo-mensaje-error {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/***********************************************************
+	Fin esclavo / maestro - ListaDoble
+***********************************************************/
+/***********************************************************
+	Esclavo / maestro - BootrapSelect o Select
+***********************************************************/
+.bootstrap-select.esclavo-desactivar > button {
+    display: none;
+}
+
+select.esclavo-desactivar {
+    display: none;
+}
+
+.esclavo-desactivar.input-group-btn {
+    font-size: 12px;
+}
+
+.esclavo-desactivar ~ .input-group-btn {
+    padding-top: 6px;
+    padding-left: 5px;
+}
+
+/***********************************************************
+	Fin esclavo / maestro - BootrapSelect o Select
+***********************************************************/
+/*******************************************************************************
+	Fin esclavo / maestro
+*******************************************************************************/
+.contenedor-google-maps {
+    height: 600px;
+}
+
+body.swal-ancho .swal2-popup {
+    width: 64em !important;
+}
+
+/******************************************************************************/
+/****************Barra de Botones *********************************************/
+/******************************************************************************/
+.cuerpo-contenedor {
+    position: relative;
+    margin-top: 80px;
+}
+
+.cuerpo-contenedor .cuerpo-barra {
+    position: fixed;
+    z-index: 4;
+}
+
+.cuerpo-contenedor .cuerpo-barra-navegacion {
+    top: 50px;
+    right: 0px;
+    width: 100%;
+    height: 55px;
+    padding-top: 2px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: right;
+    color: #DDD;
+    background-color: #323232;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.cuerpo-contenedor .cuerpo-barra-titulo {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.cuerpo-contenedor .cuerpo-barra-botonera {
+    margin-top: 10px;
+}
+
+.cuerpo-contenedor .cuerpo-barra-listado {
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    padding-top: 7px;
+    color: #DDD;
+    background-color: #2f353f;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    margin: 0;
+}
+
+.cuerpo-barra-listado .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 2px;
+}
+
+
+@media (min-width: 768px) {
+    .cuerpo-contenedor {
+        margin-top: 100px;
+    }
+
+    .body-menu-lateral .cuerpo-barra-navegacion {
+        top: 55px;
+    }
+
+    .body-menu-lateral-expandido .cuerpo-contenedor .cuerpo-barra-listado {
+        width: calc(100% - 260px);
+    }
+
+    .body-menu-lateral-escondido .cuerpo-contenedor .cuerpo-barra-listado {
+        width: calc(100% - 60px);
+    }
+
+    .body-menu-lateral-expandido .cuerpo-contenedor .cuerpo-barra-navegacion {
+        width: calc(100% - 260px);
+    }
+
+    .body-menu-lateral-escondido .cuerpo-contenedor .cuerpo-barra-navegacion {
+        width: calc(100% - 60px);
+    }
+}
+
+/******************************************************************************/
+/************Fin Barra de Botones *********************************************/
+/******************************************************************************/

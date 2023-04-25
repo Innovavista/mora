@@ -1,0 +1,48 @@
+.pagination{
+	display: inline-block;
+}
+.pagination > li{
+	display: inline-block;
+}
+.pagination > li > a{
+	display: block;
+	border: 0;
+    border-radius: 30px !important;
+    transition: all .3s;
+    padding: 0px 11px;
+    margin: 0 3px;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: $default;
+    font-weight: 400;
+    font-size: 12px;
+	text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+}
+.pagination > li > a:hover{
+	background-color: #eee;
+    border-color: #ddd;
+}
+.pagination > .disabled > a:hover{
+	color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus{
+	background-color: $primary;
+    border-color: $primary;
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(33, 150, 243, 0.14), 0 1px 10px 0 rgba(33, 150, 243, 0.12), 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+}
+.pagination > lli > a:nth-child(1),
+.pagination > li > a:nth-child(2),
+.pagination > li > a:nth-last-child(1),
+.pagination > li > a:nth-last-child(2){
+	font-size: 14px;
+	font-weight: 500;
+}

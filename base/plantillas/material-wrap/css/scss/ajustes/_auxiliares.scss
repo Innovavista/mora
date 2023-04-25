@@ -1,0 +1,139 @@
+.banda-superior-azul{
+	border-top: 4px solid #1976d2;
+}
+.banda-superior-gris{
+	border-top: 4px solid #bbb;
+}
+
+// Material wrap tiene border-bottom pero no para los laterales.
+$border-style: 1px solid rgba(215,225,237,.8);
+.border-right {
+	border-right: $border-style;
+}
+.border-left {
+	border-left: $border-style;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-inline {
+  display: inline !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-table {
+  display: table !important;
+}
+
+.d-table-row {
+  display: table-row !important;
+}
+
+.d-table-cell {
+  display: table-cell !important;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.d-inline-flex {
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+.bg-primary {
+  background-color: #337ab7 !important;
+}
+.bg-success {
+  background-color: #dff0d8 !important;
+}
+.bg-info {
+  background-color: #d9edf7 !important;
+}
+.bg-warning {
+  background-color: #fcf8e3 !important;
+}
+.bg-danger {
+  background-color: #f2dede !important;
+}
+
+.width-100{
+	width: 100% !important;
+}
+.width-90{
+	width: 90% !important;
+}
+.width-80{
+	width: 80% !important;
+}
+.width-70{
+	width: 70% !important;
+}
+.width-60{
+	width: 60% !important;
+}
+.width-50{
+	width: 50% !important;
+}
+.width-40{
+	width: 40% !important;
+}
+.width-30{
+	width: 30% !important;
+}
+.width-20{
+	width: 20% !important;
+}
+.width-10{
+	width: 10% !important;
+}
+.width-0{
+	width: 0% !important;
+}
+.height-100{
+	height: 100% !important;
+}
+.height-90{
+	height: 90% !important;
+}
+.height-80{
+	height: 80% !important;
+}
+.height-70{
+	height: 70% !important;
+}
+.height-60{
+	height: 60% !important;
+}
+.height-50{
+	height: 50% !important;
+}
+.height-40{
+	height: 40% !important;
+}
+.height-30{
+	height: 30% !important;
+}
+.height-20{
+	height: 20% !important;
+}
+.height-10{
+	height: 10% !important;
+}
+.height-0{
+	height: 0% !important;
+}
+.no-wrap{
+	white-space: nowrap;
+}

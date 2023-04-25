@@ -1,0 +1,152 @@
+@import "../servicio-turnos/helpers";
+@import "../servicio-turnos/animaciones";
+@import "../servicio-turnos/sidebar";
+
+.servicio-turnos {
+	.calendario-v2-mes-control .calendario-mes-control-boton {
+		font-size: 25px;
+		background: transparent;
+		width: 28px;
+		height: 28px;
+		border-radius: 8px;
+
+		&:not(:disabled):hover {
+			background: #879fee;
+		}
+	}
+
+	.content-title .volver {
+		margin-right: 8px;
+		color: #6f7a88;
+	}
+
+	&-seccion > .content {
+		padding-bottom: 0 !important;
+	}
+
+	&-card.card {
+		margin-bottom: 35px;
+	}
+
+	&-contenido {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&-calendario-contenedor {
+		flex: 1;
+	}
+
+	&-titulo-servicio {
+		display: inline-flex;
+		align-items: center;
+		background: #f5f6fa;
+		padding: 2px 15px;
+		border-radius: 5px;
+		font-weight: 600;
+		margin-left: 33px;
+		font-size: 13px;
+		color: #484f66;
+
+		&-indicador {
+			display: inline-block;
+			width: 11px;
+			height: 11px;
+			border-radius: 50%;
+			margin-right: 7px;
+			border: 1px solid #fff;
+
+			&.deshabilitado {
+				background: #b9b9b9;
+			}
+
+			&.habilitado {
+				background: #65f786;
+			}
+		}
+	}
+
+	&-controles-contenedor {
+		display: flex;
+		align-items: center;
+		margin-bottom: 24px;
+		margin-left: 5px;
+	}
+
+	&-clonacion {
+		@include animacion(fadeIn);
+
+		&-filtros-buscador {
+			display: inline-flex;
+			position: relative;
+			margin-bottom: 25px;
+
+			> span {
+				position: absolute;
+				right: 0;
+				display: flex;
+				align-items: center;
+				height: 100%;
+				top: 0;
+				padding-right: 13px;
+				font-size: 15px;
+				color: #9ca8c9;
+			}
+		}
+
+		&-filtro-buscador {
+			border: 1px solid #dee2ed;
+			padding: 8px 15px;
+			min-width: 260px;
+			border-radius: 6px;
+			color: #606573;
+		}
+
+		&-titulo {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 17px;
+			padding: 0;
+			margin: 0;
+			margin-bottom: 15px;
+			color: #606573;
+			order: 1;
+		}
+
+		&-vacio {
+			font-size: 13px;
+			color: #606573;
+		}
+
+		&-cerrar {
+			background: transparent;
+			border: 0;
+			font-size: 28px;
+			color: #ff9b9b;
+			cursor: pointer;
+		}
+
+		&-servicio {
+			background: transparent;
+			border: 1px solid #6f7a88;
+			padding: 2px 18px;
+			border-radius: 25px;
+			color: #636f8b;
+			font-weight: 500;
+			margin-right: 7px;
+			margin-bottom: 7px;
+			cursor: pointer;
+			@include animacion(zoomIn, 0.3s);
+			&:hover {
+				background: #636f8b;
+				color: #fff;
+			}
+		}
+
+		&-cargando {
+			font-size: 26px;
+			color: #636f8b;
+		}
+	}
+}

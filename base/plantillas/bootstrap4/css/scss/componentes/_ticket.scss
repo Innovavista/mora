@@ -1,0 +1,93 @@
+.ticket-titulo{
+	margin: 0px;
+	margin-bottom: 10px !important;
+	padding-top: 0px !important;
+}
+.ticket-autor{
+	margin: 0px;
+}
+.ticket-autor-centros{
+	font-weight: normal !important;
+}
+.ticket-tiempo{
+	font-size: 0.92em;
+	> small{
+		font-weight: normal;
+	}
+}
+.ticket-estado-label{
+	background: #eee;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 12px;
+	&-abierto{
+		background: #dc3545;
+		color: #fff;
+	}
+	&-proceso{
+		background: #ffc107;
+		color: #fff;
+	}
+}
+.ticket-estado-titulo{
+	font-size: 17px;
+	color: #7a7a7a;
+}
+.ticket-estado-fecha{
+	position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #b3b3b3;
+    font-size: 0.83em;
+    line-height: 1;
+    text-align: right;
+}
+.ticket-estado-fecha-hace{
+	display: inline-block;
+	margin-top: 6px;
+	font-weight: normal;
+    font-size: 0.75em;
+}
+.ticket-estado-persona{
+	margin-top: 3px;
+	font-size: 1em;
+}
+.ticket-persona{
+	display: flex;
+}
+.ticket-persona-foto{
+	border-radius: 50%;
+}
+.ticket-persona-chica{
+	flex-direction: row-reverse;
+	margin-bottom: 10px;
+}
+.ticket-persona-chica .ticket-persona-foto{
+	margin-right: 10px;
+}
+.ticket-persona-chica .ticket-persona-nombre{
+	font-size: 1em;
+	flex-grow: 4;
+}
+
+@media (min-width: 768px) {
+	.titulo-cabecera{
+		position: relative;
+	}
+	.ticket-titulo{
+		padding-right: 110px;
+	}
+	.ticket-tiempo,
+	.ticket-concepto-calidad{
+		position: absolute;
+		right: 20px;
+		top: 15px;
+	}
+	.ticket-concepto-calidad{
+		top: 45px;
+	}
+	.ticket-tiempo{
+		text-align: right;
+	}
+}

@@ -1,0 +1,59 @@
+.seccion-control-aleatorio {
+	.align-center {
+			text-align: center;
+	}
+	.btn-right {
+		float: right;		
+	}
+	.table  {
+		.contenedor-evaluacion {
+			display: flex; 
+			justify-content: flex-start;
+			align-items: center;
+			.imagen {
+				width: 50px;
+				height: auto; 
+				float: left;
+			}
+			.nombre {
+				margin: 0;
+				vertical-align: middle;
+				display: table-cell;
+				padding-left: 30px;
+			}
+		}
+		.valor-evaluacion {
+			width: 33px;
+			height: 33px;
+			border: 1px solid black;
+			margin: 0 auto;
+			background: transparent;
+			padding: 0; 
+			display: block;
+		}
+		.td-observacion {
+			max-width: 300px;
+			font-size: 13px;
+			.contenedor-observacion {
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: center;
+				align-items: center;
+				.observacion {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					padding: 20px;
+					margin: 0;
+					background: white;
+					resize: horizontal;
+					width: 200px;
+				}
+				button {
+					float: right;
+					width: 120px;
+				}
+			}
+		}
+	}
+}

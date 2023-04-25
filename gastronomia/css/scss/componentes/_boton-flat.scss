@@ -1,0 +1,33 @@
+.boton-flat {
+	display: block;
+	border: 0;
+	padding: 12px 45px;
+	margin-left: auto;
+	margin-top: 25px;
+	font-size: 13px;
+	color: #fff;
+	background: #747a8b;
+	border-radius: 5px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.2s ease all;
+
+	&:disabled {
+		background: #747a8b;
+		opacity: 0.3;
+		&:hover {
+			cursor: default;
+		}
+	}
+
+	&:hover {
+		color: #fff;
+	}
+
+	&.success {
+		background: #5cd66a;
+		&:not(:disabled):hover {
+			background: #33cc45;
+		}
+	}
+}

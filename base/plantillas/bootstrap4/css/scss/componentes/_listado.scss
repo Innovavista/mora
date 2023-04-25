@@ -1,0 +1,276 @@
+.cuerpo-barra-listado label{
+	display: inline-block;
+}
+.cuerpo-barra-listado .dropdown-menu {
+	bottom: initial;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th{
+	padding-left: 45px;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before{
+    content: "\f06e";
+    font-size: 16px;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 6px;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 0;
+    margin: 0;
+    border: 0;
+	background: transparent;
+    text-indent: 5px;
+    font-family: 'FontAwesome';
+    font-size: 13px;
+	color: $primary;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before{
+	content: "\f2a8";
+	background: transparent;
+	color: $danger;
+}
+table.dataTable>tbody>tr.child ul{
+	display: block;
+}
+.cuerpo-barra-listado .text-left,
+.cuerpo-barra-listado .text-right{
+	text-align: center !important;
+	margin-top: 15px;
+}
+.card-listado .zf-title th{
+	font-size: 16px;
+	font-weight: 500;
+}
+.table .form-control,
+.dataTable .form-control{
+	width: 100%;
+	min-width: 0 !important;
+}
+.tabla-operaciones{
+	display: inline-block;
+	white-space: inherit;
+	.btn:disabled{
+		opacity: .4;
+		&:hover{
+			cursor: not-allowed;
+		}
+	}
+	.btn-group{
+		display: inline-block;
+	}
+	.btn.btn-sm{
+		display: inline-block;
+		padding: 8px 5px;
+		margin-right: 10px;
+	}
+	.btn-info,{
+		background: transparent;
+		box-shadow: none;
+		color: $info;
+		&:hover{
+			box-shadow: none;
+			color: lighten($info, 10);
+		}
+		&:not(:disabled):not(.disabled):active,
+		&:not([href]):not([tabindex]){
+			background: transparent;
+			color: $info;
+		}
+		&:not(:disabled):not(.disabled):not(.btn-simple):active:focus{
+			color: $info;
+		}
+	}
+	.btn-warning{
+		background: transparent;
+		box-shadow: none;
+		color: $warning;
+		&:hover{
+			box-shadow: none;
+			color: lighten($warning, 10);
+		}
+		&:not(:disabled):not(.disabled):active,
+		&:not([href]):not([tabindex]){
+			background: transparent;
+			color: $warning;
+		}
+		&:not(:disabled):not(.disabled):not(.btn-simple):active:focus{
+			color: $warning;
+		}
+	}
+	.btn-primary{
+		background: transparent;
+		box-shadow: none;
+		color: $primary;
+		&:hover{
+			box-shadow: none;
+			color: lighten($primary, 10);
+		}
+		&:not(:disabled):not(.disabled):active,
+		&:not([href]):not([tabindex]){
+			background: transparent;
+			color: $primary;
+		}
+		&:not(:disabled):not(.disabled):not(.btn-simple):active:focus{
+			color: $primary;
+		}
+	}
+	.btn-success{
+		background: transparent;
+		box-shadow: none;
+		color: $success;
+		&:hover{
+			box-shadow: none;
+			color: lighten($success, 10);
+		}
+		&:not(:disabled):not(.disabled):active,
+		&:not([href]):not([tabindex]){
+			background: transparent;
+			color: $success;
+		}
+		&:not(:disabled):not(.disabled):not(.btn-simple):active:focus{
+			color: $success;
+		}
+	}
+	.btn-danger{
+		background: transparent;
+		box-shadow: none;
+		color: $danger;
+		&:hover{
+			box-shadow: none;
+			color: lighten($danger, 10);
+		}
+		&:not(:disabled):not(.disabled):active,
+		&:not([href]):not([tabindex]){
+			background: transparent;
+			color: $danger;
+		}
+		&:not(:disabled):not(.disabled):not(.btn-simple):active:focus{
+			color: $danger;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.tabla-operaciones{
+		white-space: nowrap;
+		.btn.btn-sm{
+			display: inline;
+		}
+	}
+	.cuerpo-barra-listado .text-left{
+		text-align: left !important;
+		margin-top: 0;
+	}
+	.cuerpo-barra-listado .text-right{
+		text-align: right !important;
+		margin-top: 0;
+	}
+	.cuerpo-barra-listado > .container{
+		display: flex;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+// Adaptacion de helpers de Boostrap 3 para operaciones
+.tabla-operaciones{
+
+	.hidden-xs{
+		display: none;
+	}
+
+
+	@media (min-width: 768px) {
+		.hidden-xs{
+			display: block;
+		}
+		.hidden-sm{
+			display: none;
+		}
+	}
+
+	@media (min-width: 992px) {
+		.hidden-sm{
+			display: block;
+		}
+		.hidden-md{
+			display: none;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.hidden-md{
+			display: block;
+		}
+		.hidden-lg{
+			display: none;
+		}
+	}
+
+}
+
+// Operaciones con icono
+.tabla-operaciones-icono{
+
+	.btn.btn-sm{
+		display: inline-block;
+		text-indent: -9999px;
+		overflow: hidden;
+		width: 25px;
+		height: 25px;
+		padding: 0;
+		font-size: 14px;
+		border-radius: 50%;
+		background: #f7f7f7 !important;
+		border-top-right-radius: 50% !important;
+		border-bottom-right-radius: 50% !important;
+		border: 1px solid #eaeaea;
+		i{
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 100%;
+			line-height: 25px;
+			text-indent: 0;
+		}
+	}
+
+}
+
+// Operaciones agrupadas
+.tabla-operaciones-agrupadas{
+
+	.dropdown-toggle{
+		border: 1px solid #eee;
+		margin: 0;
+		box-shadow: 0px 0px 6px rgba(0,0,0,.1);
+		font-weight: 600;
+		padding: 7px 15px;
+		text-transform: none;
+		&:focus,
+		&:active{
+			border-color: #39a1f4 !important;
+			box-shadow: 0px 0px 6px rgba(0,0,0,.1) !important;
+		}
+	}
+
+	.dropdown-menu a.btn{
+		display: block;
+		font-size: 14px;
+		margin: 0;
+		text-align: left;
+		padding: 8px 10px;
+		text-transform: none;
+		color: #505050;
+		border-bottom: 1px solid #eee;
+		i{
+			min-width: 15px;
+		}
+	}
+
+}

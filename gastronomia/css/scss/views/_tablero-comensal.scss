@@ -1,0 +1,37 @@
+.tablero-comensales {
+
+	&-operaciones &-operacion {
+
+		&-reservas{
+			color: #969696;
+			&:hover,
+			&:active,
+			&:focus,
+			&:active:focus{
+				color: lighten(#969696, 5%) !important;
+			}
+		}
+
+		&-cta{
+			color: #5fa790;
+			&:hover,
+			&:active,
+			&:focus,
+			&:active:focus{
+				color: lighten(#5fa790, 5%) !important;
+			}
+		}
+
+		&-editar{
+			color: #68b7da;
+			&:hover,
+			&:active,
+			&:focus,
+			&:active:focus{
+				color: lighten(#68b7da, 5%) !important;
+			}
+		}
+
+	}
+
+}

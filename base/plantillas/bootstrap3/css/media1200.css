@@ -1,0 +1,92 @@
+@media (min-width: 1200px){
+	.col-sm-2 .affix-bottom,
+	.col-sm-2 .affix-top,
+	.col-sm-2 .affix,
+	.col-md-2 .affix-bottom,
+	.col-md-2 .affix-top,
+	.col-md-2 .affix {
+		width: 263px;
+	}
+	/*******************************************************************************
+		Módulos
+	*******************************************************************************/
+	/*********************************************************************
+		Módulo Alerta
+	*********************************************************************/
+	.alerta{
+		width: 1170px;
+	}
+	/*********************************************************************
+		Fin Módulo Alerta
+	*********************************************************************/
+	/*********************************************************************
+		Módulo Modal
+	*********************************************************************/
+	.modal-xl {
+		width: 1170px;
+	}
+	/*********************************************************************
+		Módulo Modal
+	*********************************************************************/
+	/*******************************************************************************
+		Inicio Dropdown
+	*******************************************************************************/
+	.navbar-nav>li:nth-child(n+4) .dropdown-menu{
+		left: 0;
+		right: auto
+	}
+	.navbar-nav>li:nth-child(n+4) .dropdown-submenu>.dropdown-menu {
+		top: 0;
+		left: 100%;
+		right: auto;
+		margin-top: -6px;
+		margin-left: -1px;
+		margin-right: 0;
+		-webkit-border-radius: 0 6px 6px 6px;
+		-moz-border-radius: 0 6px 6px;
+		border-radius: 0 6px 6px 6px;
+	}
+
+	.navbar-nav>li:nth-child(n+4) .dropdown-submenu.pull-left>.dropdown-menu {
+		left: -100%;
+		right: auto;
+		margin-left: 10px;
+		margin-right: 0;
+		-webkit-border-radius: 6px 0 6px 6px;
+		-moz-border-radius: 6px 0 6px 6px;
+		border-radius: 6px 0 6px 6px;
+	}
+
+	.navbar-nav>li:nth-child(n+6) .dropdown-menu{
+		left: auto;
+		right: 0
+	}
+
+	.navbar-nav>li:nth-child(n+6) .dropdown-submenu>.dropdown-menu {
+		top: 0;
+		left: auto;
+		right: 100%;
+		margin-top: -6px;
+		margin-left: 0;
+		margin-right: -1px;
+		-webkit-border-radius: 6px 0 6px 6px;
+		-moz-border-radius: 6px 0 6px 6px;
+		border-radius: 6px 0 6px 6px;
+	}
+
+	.navbar-nav>li:nth-child(n+6) .dropdown-submenu.pull-left>.dropdown-menu {
+		left: auto;
+		right: 100%;
+		-webkit-border-radius: 6px 0 6px 6px;
+		-moz-border-radius: 6px 0 6px 6px;
+		border-radius: 6px 0 6px 6px;
+	}
+	/*******************************************************************************
+		Fin Dropdown
+	*******************************************************************************/
+	/*******************************************************************************
+		Fin Módulos
+	*******************************************************************************/
+}
+
+

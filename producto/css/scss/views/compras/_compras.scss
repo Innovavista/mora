@@ -1,0 +1,176 @@
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.compras-resultado {
+	padding: 9px;
+	margin: 0;
+	border-radius: 6px;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #797979;
+	border: 2px solid #eee;
+	transition: all ease-in-out .1s;
+	&:hover{
+		cursor: pointer;
+	}
+	> span:first-child{
+		color: #4d4d4d;
+		font-weight: 500;
+	}
+	> span:last-child{
+		color: #818181;
+	}
+}
+
+.textarea-compras {
+	height: 72px !important;
+}
+
+.tabla-fila-color-claro {
+	background: rgba(0,97,135,0.05);
+}
+
+.compras-select-fila {
+	> .dropdown-toggle{
+		display: none;
+	}
+	.bootstrap-select > .dropdown-toggle{
+		display: block;
+	}
+}
+
+.seccion-compras-pedido {
+	.fondo-gris {
+		background-color: #8080803d !important;
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.tabla-comprables-internos {
+		tr{
+			font-size: 15px;
+			color: #747474;
+			animation-duration: .5s;
+		}
+		input{
+			color: #747474;
+		}
+		tr > td:first-child > span{
+			> span:first-child{
+				color: #4d4d4d;
+				font-weight: 500;
+			}
+			> span:last-child{
+				color: #818181;
+			}
+		}
+	}
+}
+
+.compras-tabla-consolidado {
+
+	table {
+		width: 100%;
+		table-layout: fixed;
+		border-collapse: collapse;
+	}
+
+	.tabla-columna-adicional {
+		width: 90px;
+	}
+
+	.tabla-columna-deposito {
+		width: 115px;
+	}
+
+	.tabla-columna-cantidad {
+		width: 95px;
+	}
+
+	.tabla-columna-stock {
+		width: 38px;
+	}
+	
+	.tabla-columna-alerta {
+		width: 35px;
+		padding: 0;
+		span {
+			color: #fa5858;
+			font-size: 18px;
+			margin-left: 5px;
+		}
+	}
+
+	.tabla-columna-fecha {
+		width: 145px;
+		&-texto {
+			width: 135px;
+		}
+	}
+
+	.tabla-fila {
+		&-cantidad {
+			.contenedor {
+				display: flex;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				input {
+					width: 75px;
+					text-align: right;
+					background-color: white;
+				}			
+			}
+		}
+		&-fecha {
+			input {
+				width: 140px;
+				text-align: center;
+			}
+		}
+		&-pedido {
+			text-align: center;
+		}
+	}
+}
+
+.compras-y-logistica {
+	
+	.form-filtros {
+		display: flex;
+		align-items: center;
+		&-input {
+			max-width: 220px;
+		}
+	}
+	
+	.fila-linea-remover {
+		border: 0;
+		background: transparent;
+		font-size: 20px;
+		color: #ccc;
+		cursor: pointer;
+		&:hover{
+			color: #fa5858;
+		}
+	}
+	
+	.comprables-buscador .form-input-custom-input {
+		border-color: #ced0f8;
+	}
+
+	.comprables-buscador .form-input-custom-input.selected {
+		border: 2px solid #ced0f8;
+	}
+
+	.comprables-buscador .componente-buscador-resultados {
+		overflow: hidden;
+		overflow-y: visible;
+		max-height: 550px;
+	}
+	
+}

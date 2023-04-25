@@ -1,0 +1,112 @@
+.tabla-moderna-contenedor{
+	table{
+		margin-top: 15px;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		thead td{
+			border: 0;
+			margin-bottom: 3px;
+		}
+		thead th{
+			color: #696969;
+		}
+		thead th,
+		tbody td{
+			vertical-align: middle;
+			border: 1px solid #efefef;
+			border-right: 0;
+			border-left: 0;
+			padding: 0.85em;
+			min-width: 50px;
+		}
+	}
+	.table-striped {
+		tbody tr:nth-of-type(odd){
+			background: #f9f9f9;
+		}
+		tbody tr:nth-of-type(even){
+			background: #fff;
+		}
+		tbody tr:hover{
+			background: #f1f1f1;
+		}
+	}
+	.tabla-operaciones {
+		.btn-info,
+		.btn-primary,
+		.btn-danger,
+		.btn-default,
+		.btn-success,
+		.btn-warning{
+			background: transparent;
+			border: 0;
+		}
+		.btn-info{
+			color: #5bc0de;
+			&:active,
+			&:hover{
+				color: lighten(#5bc0de, 10);
+				background: transparent;
+				box-shadow: none;
+			}
+		}
+		.btn-primary{
+			color: #337ab7;
+			&:active,
+			&:hover{
+				color: lighten(#337ab7, 10);
+				background: transparent;
+				box-shadow: none;
+			}
+		}
+		.btn-danger{
+			color: #d9534f;
+			&:active,
+			&:hover{
+				color: lighten(#d9534f, 10);
+				background: transparent;
+				box-shadow: none;
+			}
+		}
+		.btn-warning{
+			color: #f0ad4e;
+			&:active,
+			&:hover{
+				color: lighten(#f0ad4e, 10);
+				background: transparent;
+				box-shadow: none;
+			}
+		}
+		.btn-default{
+			color: #333;
+			&:active,
+			&:hover{
+				color: lighten(#333, 10);
+				background: transparent;
+				box-shadow: none;
+			}
+		}
+		.btn-success{
+			color: #05ad83;
+			&:active,
+			&:hover{
+				color: lighten(#05ad83, 10);
+				background: transparent;
+				box-shadow: none;
+			}
+		}
+	}
+	#dataTable_filter{
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.tabla-moderna-contenedor{
+		.btn-group > .btn{
+			display: inline;
+			float: none;
+		}
+	}
+}

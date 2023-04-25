@@ -1,0 +1,205 @@
+.form-group{
+	position: relative;
+	padding-bottom: 10px;
+	font-size: em(14px);
+	margin-top: 34px
+}
+.form-group.label-floating label.control-label{
+    position: absolute;
+	top: -30px;
+    left: 0;
+    font-size: em(12px);
+    line-height: 1.07143;
+	color: #333333;
+    font-weight: 500;
+	    margin-top: 16px;
+    transition: 0.3s ease all;
+}
+.form-control{
+	height: 36px;
+    padding: 7px 0;
+	min-width: 120px;
+    font-size: 1em;
+    line-height: 1.42857;
+    transition: background 0s ease-out;
+    float: none;
+    box-shadow: none;
+    font-weight: 400;
+	border: 0;
+	border-radius: 0;
+	background-image: linear-gradient(#2196F3, #2196F3), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: transparent;
+}
+[class^="col"] {
+	.form-control {
+		min-width: 0;
+	}
+}
+.form-group.has-error .panel-default.form-control{
+	border-color: $danger;
+}
+.form-group label{
+	font-weight: 600;
+    font-size: 13px;
+    color: #919191;
+}
+.form-group .help-block{
+	font-size: em(11px);
+    line-height: 14px;
+    margin-top: 5px;
+	margin-bottom: 0;
+	color: #6b6b6b;
+	font-style: italic;
+}
+.fieldset-embebido > legend{
+	font-weight: 500;
+    color: #6a6a6a;
+}
+.form-group.has-error .help-block{
+	list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: em(13px);
+    color: $danger;
+    font-weight: 500;
+}
+.form-control:focus{
+	outline: 0;
+	background-size: 100% 2px, 100% 1px;
+	box-shadow: none;
+	transition-duration: 0.3s;
+}
+.form-control-redondeado{
+	background: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 200px;
+    padding: 5px 13px;
+    height: auto;
+    height: 33px;
+    font-size: 13px;
+}
+.form-group.has-error .form-control{
+	background-image: linear-gradient($danger, $danger);
+	background-size: 100% 2px;
+}
+.help-block.formulario-error{
+	font-size: em(13px);
+	color: $danger;
+}
+
+.fielset-imagenes .coleccion-elemento{
+	display: inline-block;
+}
+.form-group .uploader{
+	margin-top: -20px;
+}
+.panel-default.form-control{
+	border: 1px solid #e2e2e2;
+	border-radius: 2px;
+	border-bottom: 0;
+}
+.uploader-panel{
+	padding: 15px;
+	padding-bottom: 35px;
+}
+.uploader-controles{
+	border-top: 1px solid #ddd;
+	padding: 10px;
+}
+.uploader-progreso{
+	bottom: 10px;
+}
+.uploader-thumbnail.thumbnail{
+	border: 1px solid #eee;
+    border-radius: 6px;
+}
+.uploader-btn-group{
+	top: 15px;
+}
+.uploader-imagen{
+    opacity: 0.6;
+}
+.form-control:disabled, .form-control[readonly], .form-control[disabled]{
+	background-image: none;
+	background-color: transparent;
+	border-bottom: 1px dotted #D2D2D2;
+	color: #ababab;
+}
+form .checkbox:first-child{
+	margin-top: 15px;
+}
+
+.input-group-action{
+	position: relative;
+}
+.input-group-action .form-control{
+	padding-right: 40px;
+}
+.input-group-action .btn{
+	position: absolute;
+    right: 0;
+    margin: 0;
+    height: 100%;
+	color: #757575;
+	background: transparent;
+	box-shadow: none;
+}
+.input-group-action .btn:hover{
+	color: $primary;
+	box-shadow: none;
+}
+.input-group .input-group-btn .btn{
+    margin: 0;
+    padding: 11px 24px;
+    border-radius: 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: relative;
+    left: -1px;
+    z-index: 1;
+}
+
+.nav-form.nav-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+    .nav-item {
+        text-align: center;
+        .nav-link{
+            display: block;
+            padding: 10px 15px;
+            border-radius: 2px;
+			font-weight: 500;
+			color: #9199ff;
+            &.active{
+				background: #9199ff;
+				border-radius: 2px;
+				color: #fff;
+            }
+        }
+    }
+}
+.tab-btn-group.form-group{
+    margin-top: 0;
+	& .btn-group .btn{
+		background: #39a1f4;
+	}
+    & .btn-group .btn{
+        margin: 0;
+        padding: 12px 15px;
+    }
+}
+.tab-content.abm-formulario{
+    clear: both;
+}
+.label-chico{
+	font-weight: 700;
+	color: #6a6a6a;
+	font-size: 13px;
+}

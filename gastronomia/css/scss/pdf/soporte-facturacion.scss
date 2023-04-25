@@ -1,0 +1,101 @@
+.soporte-facturacion-pdf {
+	font-size: 9pt;
+	margin: 0;
+	border-bottom: 0;
+
+	&-logo {
+		max-width: 75px;
+	}
+
+	&-titulo {
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 11pt;
+		font-weight: 700;
+	}
+
+	.cliente {
+		margin-bottom: 40px;
+		page-break-after: always;
+	}
+
+	.cliente:last-child {
+		page-break-after: avoid;
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	tfoot {
+		// Deshabilita la repetición del pie en distintas páginas.
+		display: table-row-group;
+	}
+
+	tr {
+		page-break-inside: avoid;
+	}
+
+	tr.separador {
+		height: 15px;
+	}
+
+	tr.cabecera th {
+		vertical-align: middle;
+	}
+
+	th {
+		font-weight: 700;
+		border: 1px solid #ddd;
+		padding: 0.5rem;
+	}
+
+	thead th {
+		border-bottom: 1px solid #ddd;
+	}
+
+	th.cliente {
+		font-size: 10pt;
+		background: #f9f9f9;
+	}
+
+	td {
+		border: 1px solid #ddd;
+		padding: 0.3rem;
+	}
+
+	td.codigo {
+		width: 110px;
+	}
+
+	td.fecha {
+		width: 110px;
+	}
+
+	td.cantidad {
+		width: 90px;
+		font-weight: 500;
+		text-align: right;
+	}
+
+	tr.total td {
+		background: #eee;
+		font-weight: 600;
+		text-align: right;
+	}
+
+	tr.total.final td {
+		background: #7aa7ff;
+		color: #fff;
+		padding: 0.5rem;
+	}
+
+	td.vacio {
+		color: #acb0b9;
+	}
+}
+
+@page {
+	size: auto;
+	margin: 10mm;
+}

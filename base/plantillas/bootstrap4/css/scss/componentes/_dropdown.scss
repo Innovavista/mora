@@ -1,0 +1,26 @@
+.dropdown .dropdown-menu{
+	visibility: hidden;
+    display: block;
+    opacity: 0;
+	transition: all 150ms linear;
+	border-radius: 3px;
+}
+.dropdown.show .dropdown-menu{
+	visibility: visible;
+	opacity: 1;
+}
+.dropdown-menu a{
+	font-size: 13px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 2px;
+	width: auto;
+	@include vendorsBrowser(transition, all 150ms linear);
+}
+.dropdown-menu {
+	a:hover, a.active {
+		background-color: $dropdown-link-hover-backgroud-color;
+		color: $dropdown-link-hover-color;
+		box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(33, 150, 243, 0.4);
+	}
+}

@@ -1,0 +1,22 @@
+/* CSS REQUIRED */
+.state-icon {
+    left: -5px;
+}
+.list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+}
+
+.alerta {
+	width: 100%;
+}
+
+.preloader {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(/img/preloader-64px.gif) no-repeat;
+  background-position-x: 50%;
+  width: 100%;
+  height: 70px;
+}

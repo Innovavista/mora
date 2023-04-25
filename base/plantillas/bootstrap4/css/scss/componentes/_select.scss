@@ -1,0 +1,28 @@
+.bootstrap-select .btn{
+	background: #f5f5f5;
+	text-transform: none;
+    font-size: em(13px);
+    padding: 10px 20px;
+	color: #222 !important;
+	margin: 0;
+}
+.bootstrap-select .dropdown-toggle:focus{
+	outline: 0 !important;
+}
+.bootstrap-select{
+	background: none;
+	border: 0;
+}
+.bootstrap-select .dropdown-menu li{
+	margin-bottom: 5px;
+}
+.bootstrap-select .dropdown-menu li a{
+	margin: 0 8px;
+}
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark{
+	right: 20px;
+    top: 10px;
+}
+.bootstrap-select > .dropdown-toggle{
+	z-index: 0;
+}

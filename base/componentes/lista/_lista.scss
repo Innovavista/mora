@@ -1,0 +1,28 @@
+/* 
+	Pisamos los estilos de material wrap. Ya que por defecto a cada item de una lista le da el etilo de un botón,
+	lo cuál es indeseable.
+	Luego se agrega una clase especifica para darla aspecto de "hover" a item de la lista
+*/
+.list-group 
+	.list-group-item.active, 
+.list-group 
+	.list-group-item:active, 
+.list-group 
+	.list-group-item:focus, 
+.list-group 
+	.list-group-item:hover {
+    background-color: inherit;
+    cursor: inherit;
+    color: inherit;
+}
+
+.list-group.list-group-condensed
+	.list-group-item {
+	padding: 6px 12px;
+}
+
+.list-group.list-group-sin-padding-lateral
+	.list-group-item {
+	padding-left: 0px;
+	padding-right: 0px;
+}

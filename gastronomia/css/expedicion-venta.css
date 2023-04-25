@@ -1,0 +1,43 @@
+.fila {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .fila {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 48%);
+        grid-gap: 1rem;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+    .fila {
+        grid-template-columns: repeat(auto-fill, 30%);
+    }
+}
+
+.columna {
+    margin-bottom: 50px;
+}
+
+.columna::after {
+    flex: auto;
+}
+
+.columna > .card {
+    position: relative;
+    height: 100%;
+    font-size: 1.2em;
+}
+
+.columna > .card .btn {
+    position: absolute;
+    width: calc(100% - 40px);
+    left: 20px;
+    bottom: 10px;
+}
+
+.columna th {
+    font-weight: normal;
+}

@@ -1,0 +1,114 @@
+.uploader {
+	max-width: 400px;
+}
+
+.uploader-archivo{
+	margin-top: 33px;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+.uploader-espera{
+	position: absolute;
+    bottom: 15px;
+    margin-right: 15px;
+   	z-index: 4;
+	width: 328px;
+    height: 120px;
+	display: none;
+}
+.uploader-thumbnail.thumbnail{
+	height: 150px;
+	background-color: #fafafa;
+	position: relative;
+	overflow: hidden;
+}
+.uploader-thumbnail:empty:before {
+	content: 'Seleccione o arrastre un archivo';
+	width: 100%;
+	padding-top: 60px;
+	text-align: center;
+	display: block;
+}
+.uploader-btn{
+	width: 30px;
+	font-size: 15px;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	overflow: hidden;
+}
+.uploader-btn-group {
+	position: absolute !important;
+	right: 25px;
+	top: 25px;
+	z-index: 2;
+	margin: 0px !important;
+}
+.uploader-btn:hover {
+	width: 120px;
+	opacity: 1;
+}
+.uploader-btn-oculto{
+	display: none;
+}
+.uploader-imagen {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+.uploader-texto {
+    position: relative;
+    z-index: 1;
+}
+
+.uploader-panel{
+	position: relative;
+}
+
+.uploader-progreso{
+	position: absolute;
+	width: calc(100% - 30px);
+	bottom: -11px;
+}
+
+.uploader-controles .btn{
+	margin-left: 15px;
+}
+.uploader-alert{
+	position: absolute;
+    bottom: 15px;
+	width: calc(100% - 30px);
+    background-color: rgba(242,222,222,0.5);
+	z-index: 3;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.uploader-alert div {
+	overflow: hidden;
+	height: 15px;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+.uploader-alert:hover div{
+	height: 118px;
+
+}
+
+.abm-formulario .form-group .uploader .uploader-error,
+.uploader .uploader-error {
+    position: absolute;
+    left: 17px;
+    top: 17px;
+    margin: 0px;
+    background-color: #fffa;
+    padding: 15px;
+    width: calc(100% - 34px);
+    border-radius: 5px;
+	bottom: auto;
+}

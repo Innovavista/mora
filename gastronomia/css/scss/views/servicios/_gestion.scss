@@ -1,0 +1,632 @@
+@use "sass:math";
+@import "../servicio-turnos/index";
+@import "bloques/index";
+
+.calendario-dia-asignaciones {
+	@for $i from 1 through 10 {
+		.calendario-dia-composicion:nth-child(#{$i}) {
+			-webkit-animation-delay: #{0.1s + ((math.div($i, 20)) * 2)};
+			animation-delay: #{0.1s + ((math.div($i, 20)) * 2)};
+		}
+	}
+
+	&-contenedor {
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+}
+
+.calendario-dia-composicion {
+	width: calc(100% - 10%);
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0px 3px 10px rgba(#484f66, 0.1);
+	border-radius: 5px;
+	margin-bottom: 10px;
+	@include animacion(zoomIn, 0.3s);
+
+	&-contenido {
+		position: relative;
+		height: 100%;
+		z-index: 2;
+	}
+
+	&-activo {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		border: 2px solid #88f1d7;
+		border-radius: 6px;
+	}
+
+	&.sin-productos &-categoria {
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
+	&-categoria {
+		margin: 0;
+		width: 100%;
+		text-align: left;
+		padding: 2px 8px;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 500;
+		cursor: pointer;
+		background: linear-gradient(
+			90deg,
+			rgb(131, 154, 236) 0%,
+			rgb(174, 201, 255) 100%
+		);
+		color: #fff;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border: 0;
+
+		&.estatica {
+			cursor: default;
+		}
+
+		&.completa {
+			position: relative;
+			padding-right: 25px;
+
+			&::after {
+				@include icono("\f269");
+				position: absolute;
+				right: 8px;
+				font-size: 15px;
+				top: 5px;
+				color: #80ff9d;
+			}
+		}
+
+		&.modificada {
+			position: relative;
+			background: linear-gradient(90deg, #b6b624 0%, #ddde24 100%);
+			padding-right: 25px;
+
+			&::after {
+				@include icono("\f158");
+				position: absolute;
+				right: 8px;
+				color: #616424;
+				font-size: 16px;
+				top: 5px;
+				text-shadow: 0px 0px 5px #fff;
+				@include animacion(checkShow, 0.3s);
+			}
+		}
+
+		&.no-original{
+			position: relative;
+			background: linear-gradient(90deg, #ee8a86 0%, #f5a194 100%);
+			padding-right: 25px;
+
+			&::after {
+				@include icono("\f1b6");
+				position: absolute;
+				right: 8px;
+				color: #ff5656;
+				font-size: 16px;
+				top: 5px;
+				text-shadow: 0px 0px 5px #fff;
+				@include animacion(checkShow, 0.3s);
+			}
+		}
+
+		&.elegible-incompleta {
+			position: relative;
+			background: linear-gradient(90deg, #ec8383 0%, #ffaeae 100%);
+			padding-right: 25px;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				box-shadow: 0 0 0 0 rgba(#ffaeae, 1);
+				transform: scale(1);
+				animation: pulseElegibleIncompleta 2s infinite;
+			}
+
+			&::after {
+				@include icono("\f1f1");
+				position: absolute;
+				right: 8px;
+				color: #ff8282;
+				font-size: 15px;
+				top: 5px;
+				text-shadow: 0px 0px 5px #fff;
+			}
+		}
+	}
+
+	&-remitido {
+		position: absolute;
+		top: 9px;
+		left: 13px;
+		background: #c7ffe0;
+		font-size: 11px;
+		padding: 0px 6px;
+		border-radius: 5px;
+		font-weight: 700;
+		color: #21b070;
+
+		> span {
+			margin-right: 2px;
+		}
+	}
+
+	&.sin-productos &-productos {
+		display: none;
+	}
+
+	&-contenido.servicio-por-defecto
+		&-productos.elegibles
+		> &-productos-producto:first-child {
+		border: 1px solid #80a0ff;
+	}
+
+	&-productos {
+		position: relative;
+		padding: 5px 0;
+		cursor: grab;
+
+		&.estaticos {
+			cursor: default;
+		}
+
+		&-producto.ui-sortable-placeholder {
+			visibility: visible !important;
+			background: #f5f6fa;
+			opacity: 0.8;
+			animation: none;
+		}
+
+		&-producto {
+			position: relative;
+			border: 1px solid #eee;
+			background: rgba(#fff, 0.6);
+			border-radius: 20px;
+			margin: 5px;
+			@include animacion(checkShow, 0.3s);
+
+			&.modificado {
+				border-color: #ddde24 !important;
+				background: #fffffa
+			}
+
+			&.no-original {
+				border-color: #ff8080 !important;
+				background: #fbf1f1;
+			}
+
+			&-contenedor {
+				display: flex;
+				position: relative;
+				align-items: center;
+				padding: 4px 2px;
+			}
+
+			&-imagen {
+				width: 30px;
+				height: 30px;
+				margin: 0 5px;
+				border-radius: 50%;
+			}
+
+			&-imagen-placeholder {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 5px;
+				height: 30px;
+				width: 30px;
+				border-radius: 50%;
+				background: #eee;
+				font-size: 16px;
+				color: #9299a2;
+			}
+
+			&-texto {
+				flex: 2;
+				color: #484f66;
+				margin: 0;
+				margin-left: 10px;
+				padding-right: 30px;
+				overflow: hidden;
+				font-size: 12px;
+				line-height: 15px;
+				user-select: none;
+				-webkit-user-select: none;
+			}
+
+			&-observaciones-boton {
+				display: none;
+				position: absolute;
+				right: 0;
+				background: transparent;
+				border: 0;
+				margin-right: 10px;
+				height: 23px;
+				width: 23px;
+				opacity: 0.4;
+				color: #9c9c9c;
+				cursor: pointer;
+				@include animacion(checkShow, 0.2s);
+
+				&.active {
+					display: block;
+					opacity: 1;
+					color: #95aef4;
+				}
+			}
+
+			&-observaciones-boton:hover,
+			&:hover &-observaciones-boton {
+				display: block;
+				opacity: 1;
+			}
+		}
+
+		&.estaticos &-producto-observaciones-boton:not(.active),
+		&.estaticos &-producto-observaciones-boton:not(.active):hover,
+		&.estaticos
+			&-producto:hover
+			&-producto-observaciones-boton:not(.active) {
+			display: none;
+		}
+	}
+
+	&.mayorista-masivo &-productos-producto {
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+	&.mayorista-masivo &-productos-producto-contenedor {
+		padding: 6px 2px;
+	}
+
+	&-campos-contenedor &-cantidad-contenedor:last-child &-cantidad {
+		border-bottom-right-radius: 15px;
+	}
+
+	&-cantidad {
+		width: 60%;
+		border: 0;
+		border-left: 1px dashed #e4e7f1;
+		text-align: right;
+		background: #f5f6fa;
+		color: #6f7a88;
+		padding: 3px 15px;
+		font-weight: 500;
+		appearance: none;
+		-moz-appearance: none;
+
+		&.disabled {
+			background: #f7f7f7;
+			color: #939393;
+		}
+
+		&.sumada {
+			animation: composicion-sumar;
+			animation-fill-mode: both;
+			animation-timing-function: ease-in-out;
+			animation-duration: 0.25s;
+		}
+
+		&.restada {
+			animation: composicion-restar;
+			animation-fill-mode: both;
+			animation-timing-function: ease-in-out;
+			animation-duration: 0.25s;
+		}
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			appearance: none;
+			-webkit-appearance: none;
+		}
+
+		&:not([disabled]):hover {
+			background: #ebedf5;
+		}
+
+		&.disabled:hover {
+			background: #f7f7f7;
+		}
+
+		&-contenedor {
+			display: flex;
+			align-items: center;
+			font-size: 12px;
+			border-top: 1px solid #eee;
+		}
+
+		&-label {
+			display: inline-block;
+			width: 40%;
+			padding: 3px 8px;
+			color: #939393;
+		}
+	}
+
+	&-precio {
+		padding-left: 3px;
+	}
+
+	&-cantidad-contenedor.destacado &-cantidad-label {
+		font-weight: 500;
+		background: #f0f4ff;
+		border-bottom-left-radius: 19px;
+		color: #606a76;
+	}
+
+	&-cantidad-contenedor.destacado &-cantidad {
+		background: #f0f4ff;
+		color: #606a76;
+	}
+
+	&-modificado {
+		position: relative;
+		border: 2px solid #f69ba8;
+
+		&-icono {
+			position: absolute;
+			right: 10px;
+			top: 5px;
+			color: #fa5858;
+			font-size: 18px;
+			cursor: pointer;
+		}
+	}
+}
+
+.calendario-dia-composicion-reserva {
+	cursor: pointer;
+	&.no-elegible {
+		cursor: default;
+	}
+
+	&-categoria {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-categoria.no-elegible {
+		cursor: default;
+	}
+
+	&-categoria-observacion-boton {
+		position: relative;
+		background: transparent;
+		top: -2px;
+		width: 20px;
+		height: 20px;
+		border: 0;
+		color: #fff;
+
+		&:hover {
+			color: #d4fbe5;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			right: 0;
+			top: 4px;
+			background: #71ff93;
+			animation: pulseReservaObservacion 2s infinite;
+		}
+	}
+
+	&-categoria-acciones {
+		&-contenedor {
+			display: flex;
+			align-items: center;
+		}
+
+		&-toggle {
+			font-size: 15px;
+			width: 20px;
+			background: transparent;
+			border: 0;
+			padding: 0 10px;
+			color: #fff;
+
+			&:hover {
+				color: #4f3aff;
+			}
+		}
+	}
+
+	&-producto-contenedor {
+		position: relative;
+		padding: 10px;
+	}
+
+	&-producto {
+		margin: 0;
+		width: 100%;
+		max-width: none;
+		border-radius: 10px;
+		border: 0;
+		display: flex;
+		align-items: center;
+		padding: 9px 10px;
+		background: #f5f6fa;
+		border: 1px solid #eee;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid #d8e1ff;
+		}
+
+		&.placeholder {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 74px;
+			font-size: 32px;
+			color: #cbcfe7;
+
+			&:hover {
+				color: #859ced;
+			}
+		}
+
+		&:hover &-editar > span {
+			display: flex;
+		}
+
+		&-imagen-contenedor {
+			position: relative;
+		}
+
+		&-imagen,
+		&-imagen-placeholder {
+			display: flex;
+			width: 54px;
+			height: 54px;
+			border-radius: 12px;
+			padding: 0;
+			margin: 0;
+			font-size: 24px;
+			border: 1px solid #eaeaea;
+		}
+
+		&-texto {
+			display: block;
+			margin: 0;
+			text-align: left;
+			padding: 0;
+			padding-left: 13px;
+			font-size: 12px;
+		}
+	}
+}
+
+.calendario-dia-pasado,
+.calendario-dia-no-editable {
+	opacity: 0.55;
+
+	.calendario-dia-composicion-reserva-producto:hover {
+		border: 1px solid #eee;
+	}
+
+	.calendario-dia-composicion-reserva,
+	.calendario-dia-composicion-reserva-producto,
+	.calendario-dia-composicion-reserva-categoria {
+		cursor: default;
+	}
+	.calendario-dia-composicion-reserva-categoria-editar {
+		display: none;
+	}
+
+	.calendario-dia-composicion-reserva-categoria-observacion-boton::after {
+		display: none;
+	}
+}
+
+.calendario-dia-total {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 2px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	box-shadow: 0px 3px 10px rgb(72 79 102 / 10%);
+	margin-top: 15px;
+	background: #fff;
+	color: #606a76;
+
+	> span {
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 992px) {
+	.servicio-calendario-seccion.sidebar-mini {
+		.main-panel {
+			margin-left: 0;
+			width: 100%;
+		}
+		.sidebar {
+			width: 260px;
+			height: 100vh;
+		}
+		.sidebar .nav-label {
+			display: block;
+		}
+		.sidebar .nav i {
+			float: left;
+		}
+	}
+}
+
+@keyframes composicion-sumar {
+	0% {
+		color: #0aca7a;
+		transform: scale(1.08);
+		background: #ebedf5;
+	}
+	50% {
+		transform: scale(0.9);
+	}
+	100% {
+		color: #6f7a88;
+		transform: scale(1);
+		background: #f5f6fa;
+	}
+}
+@keyframes composicion-restar {
+	0% {
+		color: #ec3a31;
+		background: #ebedf5;
+		transform: scale(1.08);
+	}
+	50% {
+		transform: scale(0.9);
+	}
+	100% {
+		color: #6f7a88;
+		transform: scale(1);
+		background: #f5f6fa;
+	}
+}
+@keyframes pulseReservaObservacion {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(#71ff93, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(#71ff93, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(#71ff93, 0);
+	}
+}

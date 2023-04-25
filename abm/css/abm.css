@@ -1,0 +1,96 @@
+.quick-search{
+	width: 100%;
+}
+.filter{
+	width: 100% !important;
+}
+.tabla-operaciones{
+	white-space: nowrap;
+}
+
+.tabla-operaciones-agrupadas .dropdown-menu {
+    padding: 0;
+}
+
+.tabla-operaciones-agrupadas-operacion > .btn-tabla{
+    width: 100%;
+    border-radius: 0;
+}
+
+.btn-tabla{
+	min-width: 91px;
+}
+
+.label-resultados {
+	position: absolute;
+    margin-top: 1em;
+    color: #9d9d9d;
+}
+
+.container-visualizar{
+	overflow: hidden;
+}
+
+.container-visualizar .row {
+    border-bottom: 1px solid #ddd;
+}
+
+.container-visualizar .row:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+form>.form-etapa {
+	display: block;
+	margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+form>.form-etapa .form-etapa-titulo {
+	display: block;
+	padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+	color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+form>.form-etapa .form-etapa-cuerpo {
+	padding: 15px;
+}
+@media (min-width: 992px){
+	form>.form-etapa {
+		display: none;
+		min-height: 0px;
+		padding: 0px;
+		margin-bottom: 0px;
+		background-color: inherit;
+		border: 0;
+		box-shadow: none;
+	}
+	form>.form-etapa.active {
+		display: block;
+	}
+	form>.form-etapa .form-etapa-cuerpo {
+		padding: 0px;
+	}
+	form>.form-etapa .form-etapa-titulo {
+		display: none;
+	}
+}
+
+.tabla-compacta th,
+.tabla-compacta td{
+    padding: 0.5rem !important;
+    font-size: 13px !important;
+}
+.tabla-compacta .btn{
+    margin: 0px !important;
+    margin-right: 6px !important;
+}
+.tabla-compacta .btn:last-child{
+    margin-right: 0px !important;
+}

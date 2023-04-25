@@ -1,0 +1,59 @@
+.alert{
+	position: relative;
+	border: 0;
+    border-radius: 3px;
+	padding: 20px 15px;
+    line-height: 20px;
+	margin-bottom: 20px;
+	background-color: $blanco;
+	color: #555;
+	box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 255, 255, 0.4);
+}
+.alert-info{
+	background-color: $info;
+    color: $blanco;
+	box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(3, 169, 244, 0.4);
+}
+.alert-danger{
+	background-color: $danger;
+    color: $blanco;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4);
+}
+.alert-success{
+	background-color: $success;
+	color: $blanco;
+	box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
+}
+.alert-warning{
+	background-color: $warning;
+	color: #222;
+	box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 193, 7, 0.4);
+}
+.alert-primary{
+	background-color: $primary;
+	color: $blanco;
+	box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(33, 150, 243, 0.4);
+}
+.alert .close{
+	position: relative;
+	top: -14px;
+	right: -6px;
+	font-size: em(16px);
+	opacity: .7;
+	color: $blanco;
+}
+.alert .alert-link{
+	color: $blanco;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.uploader-alert{
+	width: 100%;
+    box-shadow: none;
+    padding: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.uploader-alert div {
+	height: 20px;
+}

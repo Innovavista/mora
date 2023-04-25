@@ -1,0 +1,71 @@
+/*------ Fuentes ------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+$font-family-primaria: 'Roboto', Helvetica, sans-serif;
+$font-family-secundaria: sans-serif;
+
+
+/*------ Font weight ------*/
+$font-weight-light      : 300;
+$font-weight-regular    : 400;
+$font-weight-medium     : 500;
+
+
+/*------ Text transform ------*/
+$mayusculas             : uppercase;
+$minusculas             : lowercase;
+
+
+/*--- Estados ---*/
+$default: #999999;
+$primary: #39a1f4;
+$info	: #03A9F4;
+$success: #5cb860;
+$warning: #ffc721;
+$danger	: #f55a4e;
+
+
+/*------ Texto ------*/
+$base-font-size: 14px;
+
+/*------ Colores ------*/
+$blanco : #fff;
+$color-body: #222;
+
+/*------ Componente - Layout ------*/
+$login-page-background:
+	url("/img/login-bg.jpg")	// background-image
+	top center					// background-position
+	no-repeat					// background-repeat
+	#7F7F7F;					// background-color
+
+/*------ Componente - Navbar ------*/
+$navbar-background-color: $primary;
+$navbar-color: $blanco;
+$navbar-brand-color: $blanco;
+$navbar-nav-link-color: $blanco;
+
+
+/*------ Componente - Card ------*/
+$card-login-border-color: #4285f4;
+$card-login-border-color-contrast: $blanco;
+$card-login-card-title-color: inherit;
+$card-filtros-border-color: #ffd7ad;
+
+$card-listado-border-color: #adb1ff;
+
+/*------ Componente - Menu lateral ------*/
+$menu-lateral-bg: $blanco;
+$menu-lateral-logo-bg: inherit;
+$menu-lateral-acceso-bg: transparent;
+$menu-lateral-acceso-color: #6f6f6f;
+$menu-lateral-acceso-color-resaltar: #555;
+$menu-lateral-acceso-hover-bg: rgba(200, 200, 200, 0.2);
+$menu-lateral-acceso-hover-color: #222222;
+$menu-lateral-acceso-active-bg: rgba(200, 200, 200, 0.2);
+$menu-lateral-acceso-active-color: #222222;
+
+
+/*------ Componente - Dropdown ------*/
+$dropdown-link-hover-backgroud-color: #2196F3;
+$dropdown-link-hover-color: $blanco;

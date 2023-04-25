@@ -1,0 +1,64 @@
+/******************
+	General
+******************/
+.precio-indicador{
+	width: 10px;
+    height: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+	&-proximo{
+		background: #6c73f6;
+	}
+	&-vigente{
+		background: #3ddf4e;
+	}
+	&-anterior{
+		background: #b4b4b4;
+	}
+}
+.precio-proximo-guia{
+	font-size: 13px;
+	margin-bottom: 0;
+	margin-top: 10px;
+    color: #959595;
+	& > .precio-indicador{
+		margin-right: 5px;
+	}
+}
+.precio-tabla-contenedor{
+	max-height: 300px;
+    overflow: hidden;
+    overflow-y: visible;
+}
+.precio-tabla-tr-vigente{
+	font-weight: 600;
+}
+/******************
+	Fin general
+******************/
+
+/******************
+	Múltiple
+******************/
+.precio-editar-multiple{
+	&-form-contenedor{
+		padding: 1.25rem;
+	}
+	&-separador{
+		height: 1px;
+		background: #eee;
+	}
+	&-tabla-contenedor .precio-tabla-contenedor{
+		min-height: 300px;
+	}
+	&-tabla-contenedor .precio-proximo-guia .precio-indicador-proximo{
+		margin-left: 1rem;
+	}
+	&-tabla-contenedor .text-empty-info{
+		margin-top: 16px;
+	}
+}
+/******************
+	Fin múltiple
+******************/

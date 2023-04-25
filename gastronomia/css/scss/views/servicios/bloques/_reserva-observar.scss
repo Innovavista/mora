@@ -1,0 +1,33 @@
+.servicio-reserva-observar {
+	&-cabecera {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	&-titulo {
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 0;
+		color: #5c6065;
+
+		> span {
+			color: #849bed;
+		}
+	}
+
+	&-textarea {
+		min-height: 200px;
+		width: 100%;
+		padding: 15px;
+		border: 1px solid #e0e4f0;
+		border-radius: 10px;
+		color: #484f66;
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+
+	&-boton {
+		width: 100%;
+		margin-top: 0;
+	}
+}

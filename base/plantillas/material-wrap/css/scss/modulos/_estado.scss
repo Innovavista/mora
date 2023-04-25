@@ -1,0 +1,23 @@
+.estado{
+	position: relative;
+	color: lighten($text_color, 25%);
+}
+.estado-titulo{
+	font-size: 1em;
+	font-weight: normal;
+	color: inherit;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.estado-fecha{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	color: lighten($text_color, 50%);
+	font-size: 0.75em;
+	line-height: 1;
+}
+.estado-fecha-hace{
+	font-weight: normal;
+	font-size: 0.75em;
+}

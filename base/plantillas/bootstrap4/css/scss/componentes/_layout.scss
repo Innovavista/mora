@@ -1,0 +1,130 @@
+/******************
+	Wrapper
+******************/
+.wrapper {
+  position: relative;
+  top: 0;
+}
+
+.wrapper.wrapper-full-page {
+  height: auto;
+  min-height: 100vh;
+}
+
+/******************
+	Fin wrapper
+******************/
+
+/******************
+	Content
+******************/
+.login-page > .content {
+  padding-top: 18vh;
+}
+
+.full-page > .content {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  z-index: 4;
+}
+
+.login-page.full-page > .content {
+  min-height: 100vh;
+}
+
+/******************
+	Fin content
+******************/
+
+/******************
+	Login
+******************/
+.login-page {
+  background: $login-page-background;
+  background-size: cover;
+}
+
+.login-page .forgot-pass {
+  display: block;
+  font-size: em(13px);
+  margin-top: 20px;
+}
+
+/******************
+	Fin login
+******************/
+
+/******************
+	Main panel
+******************/
+.main-panel {
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  @include vendorsBrowser(transition, all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1));
+  background-color: #eee;
+  left: 0;
+}
+
+.nav-open .main-panel {
+  left: 0;
+  @include vendorsBrowser(transform, translate3d(-260px, 0, 0));
+}
+
+.close-layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: auto;
+  background: rgba(0, 0, 0, 0.35);
+  content: "";
+  z-index: 9999;
+  overflow-x: hidden;
+  @include vendorsBrowser(transition, all 370ms ease-in);
+}
+
+.close-layer.visible {
+  opacity: 1;
+}
+
+.main-panel > .content {
+  margin-top: 70px;
+  padding: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: calc(100vh - 145px);
+}
+
+.sidebar-mini .main-panel {
+  width: calc(100% - 80px);
+  margin-left: 80px;
+}
+
+.sidebar-mini .sidebar-search-wrapper {
+  display: none;
+}
+
+/******************
+	Fin main panel
+******************/
+
+@media (min-width: 990px) {
+  .main-panel {
+    width: calc(100% - 260px);
+  }
+  .nav-open .main-panel {
+    @include vendorsBrowser(transform, translate3d(0, 0, 0));
+  }
+  .close-layer {
+    display: none;
+  }
+  .main-panel > .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

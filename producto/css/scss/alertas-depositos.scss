@@ -1,0 +1,33 @@
+.alertas-depositos {
+	padding: 35px;
+	background: #f4f4f4;
+	&-cabecera {
+		display: flex;
+		align-items: center;
+		&-imagen img {
+			width: 100px !important;
+			border-radius: 100%;
+		}
+		&-titulos {
+			color: #797979;
+			padding-left: 15px;
+			h3 {
+				font-size: 20px;
+			}
+			h4 {
+				font-size: 16px;
+			}
+		}
+	}
+	&-contenedor {
+		padding-top: 20px;
+		&-alerta {
+			display: flex;
+			align-items: center;
+		}
+	}
+	.alerta-borde {
+		border-left: 4px solid transparent;
+		padding-left: 5px;
+	}
+}

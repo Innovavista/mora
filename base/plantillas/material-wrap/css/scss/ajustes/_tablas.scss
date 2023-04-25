@@ -1,0 +1,47 @@
+.table{
+	font-size: 14px;
+}
+.table > thead{
+	background-color: #f7f7f7;
+}
+.tarjeta-inicio-contextos .table > thead{
+	background-color: transparent;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th{
+	padding: 15px 10px;
+	vertical-align: middle;
+	border-top: 1px solid #e6e6e6;
+}
+.table > thead > tr > td,
+.table > thead > tr > th{
+	padding: 20px 10px;
+}
+.table th{
+	font-weight: 500;
+	color: #4A4A4A;
+}
+
+.table.table-condensed{
+	font-size: 12px;
+}
+.table.table-condensed > tbody > tr > td,
+.table.table-condensed > tbody > tr > th,
+.table.table-condensed > tfoot > tr > td,
+.table.table-condensed > tfoot > tr > th,
+.table.table-condensed > thead > tr > td,
+.table.table-condensed > thead > tr > th{
+	padding: 7px 5px;
+}
+.table.table-borderless > tbody > tr > td,
+.table.table-borderless > tbody > tr > th,
+.table.table-borderless > tfoot > tr > td,
+.table.table-borderless > tfoot > tr > th,
+.table.table-borderless > thead > tr > td,
+.table.table-borderless > thead > tr > th{
+	border-top: 0px;
+}

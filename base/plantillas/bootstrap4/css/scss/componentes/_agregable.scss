@@ -1,0 +1,16 @@
+.agregable-contenedor{
+	margin-bottom: 20px;
+}
+.agregable-contenedor legend{
+    padding-top: 10px;
+    font-size: 21px;
+    color: #6a6a6a;
+	font-weight: 500;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.agregable-contenedor .contendor-botones{
+	top: inherit;
+	bottom: -25px;
+	z-index: 10;
+}

@@ -1,0 +1,23 @@
+.persona{
+	display: flex;
+}
+.persona-foto{
+	border-radius: 50%;
+}
+/*********************************************************************
+	Persona chica
+*********************************************************************/
+.persona-chica{
+	flex-direction: row-reverse;
+	margin-bottom: 10px;
+}
+.persona-chica .persona-foto{
+	margin-right: 10px;
+}
+.persona-chica .persona-nombre{
+	font-size: 1em;
+	flex-grow: 4;
+}
+/*********************************************************************
+	Fin persona chica
+*********************************************************************/

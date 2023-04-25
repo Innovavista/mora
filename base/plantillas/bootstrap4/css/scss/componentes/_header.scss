@@ -1,0 +1,38 @@
+.content-header{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.content-header .breadcrumb{
+	justify-content: center;
+	margin-top: 5px;
+}
+.content-title{
+	font-size: 21px;
+	line-height: 1.4;
+	font-weight: 400;
+	margin: 0;
+	text-shadow: rgba(0, 0, 0, .15) 0 0 1px;
+	color: #424242;
+}
+.content-header-actions .btn{
+	padding: 10px;
+}
+
+@media (min-width: 992px) {
+	.content-header{
+		display: flex;
+		text-align: left;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.content-header .breadcrumb{
+		justify-content: flex-start;
+		margin-top: 0;
+	}
+	.content-title{
+		font-size: 26px;
+	}
+	.content-header-actions .btn{
+		padding: 12px 30px
+	}
+}

@@ -1,0 +1,19 @@
+.lista-numerada{
+	list-style: none;
+	padding-left: 0px;
+	counter-reset: estados;
+}
+.lista-numerada > li{
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 40px;
+	counter-increment: estados;
+}
+.lista-numerada > li::before{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	content: counter(estados);
+	font-size: 2em;
+	color: lighten($text_color, 65%);
+}

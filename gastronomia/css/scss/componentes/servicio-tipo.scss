@@ -1,0 +1,53 @@
+.servicio-tipo {
+	font-size: 11px;
+	padding: 1px 5px;
+	padding-left: 7px;
+	display: inline-flex;
+	border-radius: 3px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 20px;
+	height: 20px;
+	transition: 0.2s all ease-in-out;
+	user-select: none;
+
+	&.toggle {
+		width: 20px;
+		letter-spacing: 7px;
+		overflow: hidden;
+
+		&:hover {
+			letter-spacing: 0px;
+		}
+
+		&.personalizado:hover,
+		&.personalizado:active {
+			width: 85px;
+		}
+
+		&.masivo:hover,
+		&.masivo:active {
+			width: 46.5px;
+		}
+
+		&.diario:hover,
+		&.diario:active {
+			width: 43px;
+		}
+	}
+
+	&.personalizado {
+		background: #8594f4;
+		padding-right: 7px;
+	}
+
+	&.masivo {
+		background: #de85f4;
+		padding-left: 5.5px;
+		padding-right: 5.5px;
+	}
+
+	&.diario {
+		background: #60b9cd;
+	}
+}

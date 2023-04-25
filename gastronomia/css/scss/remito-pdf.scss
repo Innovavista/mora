@@ -1,0 +1,182 @@
+.remito-pdf {
+	&-cabecera {
+		font-size: 9pt;
+		margin: 0;
+		border-bottom: 0;
+
+		th {
+			font-weight: 500;
+			vertical-align: middle;
+			padding: 0.5rem;
+			border: 1px solid #ddd;
+		}
+
+		tr:not(.remito-pdf-cabecera-info) th {
+			text-align: center;
+		}
+
+		&-info {
+			label {
+				display: block;
+				margin-bottom: 5px;
+			}
+			span {
+				font-weight: 600;
+				font-size: 10pt;
+			}
+		}
+
+		& &-titulo {
+			font-size: 12pt;
+			font-weight: 600;
+		}
+
+		&-logo {
+			max-width: 85px;
+		}
+	}
+
+	&-cuerpo-contenedor {
+		position: relative;
+	}
+
+	&-cuerpo {
+		font-size: 9pt;
+		margin: 0;
+		border-bottom: 0;
+
+		thead {
+			display: table-header-group;
+		}
+
+		tr {
+			page-break-inside: avoid;
+		}
+
+		&-producto-nombre {
+			width: 180px;
+		}
+
+		&-producto-codigo {
+			width: 100px;
+		}
+
+		&-producto-cantidad {
+			width: 50px;
+		}
+
+		th {
+			font-weight: 700;
+			border: 1px solid #ddd;
+			padding: 0.5rem;
+		}
+
+		thead th {
+			border-bottom: 1px solid #ddd;
+		}
+
+		td {
+			border: 1px solid #ddd;
+			padding: 0.3rem;
+		}
+	}
+
+	&-observacion {
+		border: 1px solid #eee;
+		margin-bottom: 10px;
+
+		&-texto {
+			font-size: 8pt;
+			padding: 5px;
+			border-bottom: 1px solid #eee;
+		}
+
+		&-autor {
+			display: block;
+			text-align: right;
+			font-size: 7pt;
+			padding: 5px;
+			color: #828282;
+		}
+	}
+
+	&-anulado {
+		position: fixed;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 28pt;
+		font-weight: 700;
+		top: 400px;
+		left: 0;
+		right: 0;
+		opacity: 0.3;
+		color: red;
+	}
+
+	&-pie {
+		page-break-inside: avoid;
+		font-size: 9pt;
+		font-weight: 500;
+		margin: 0;
+
+		td {
+			padding: 0.5rem;
+			border: 1px solid #ddd;
+		}
+
+		&-firma {
+			width: 120px;
+			height: 100px;
+		}
+
+		&-total {
+			font-size: 10pt;
+
+			td {
+				padding: 23px 0.5rem;
+				height: 23px;
+			}
+
+			span {
+				font-weight: 600;
+			}
+		}
+
+		&-cantidades tr td {
+			font-size: 9pt;
+			font-weight: 700;
+		}
+	}
+
+	.b-0 {
+		border: 0;
+	}
+
+	.bt-0 {
+		border-top: 0;
+	}
+
+	.bb-0 {
+		border-bottom: 0;
+	}
+
+	.bl-0 {
+		border-left: 0;
+	}
+
+	.br-0 {
+		border-right: 0;
+	}
+
+	td.vacio {
+		padding: 0.75rem !important;
+	}
+	td.vacio-pie {
+		padding: 1.1rem !important;
+	}
+}
+
+@page {
+	size: auto;
+	margin: 10mm;
+}

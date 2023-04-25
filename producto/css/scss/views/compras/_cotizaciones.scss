@@ -1,0 +1,50 @@
+.seccion-cotizacion {
+
+	.aside-resumen {
+		table {
+			.fila-cantidad-unidad {
+				width: 90px;
+			}
+		}
+	}
+	
+	.aside-proveedor {
+		ul {
+			li {
+				i {
+					width: 15px;
+				}
+			}
+		}
+	}
+	
+	.compras-tabla-consolidado {
+		.badge-cotizacion {
+			background-color: #006187 !important;
+		}
+	}
+}
+
+.pdf-compras {
+	line-height: 1.5em;
+	&-titulo {
+		text-align: left;
+		font-weight: bold;
+		font-size: 14pt;
+	}
+	&-dato {
+		color: #333;
+		font-size: 10pt;
+	}
+	&-header {
+		font-size: 13pt;
+		font-weight: bold;
+		&-fila {
+			font-size: 10pt;
+		}
+	}
+	ul {
+		list-style: none;
+		padding-left: 10pt;
+	}
+}

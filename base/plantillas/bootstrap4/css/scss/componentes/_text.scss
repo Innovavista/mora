@@ -1,0 +1,30 @@
+.text-primary{
+	color: $primary !important;
+}
+.text-info{
+	color: $info !important;
+}
+.text-success{
+	color: $success !important;
+}
+.text-warning{
+	color: $warning !important;
+}
+.text-danger,
+.text-error{
+	color: $danger !important;
+}
+.text-dark-gray{
+	color: #555 !important;
+}
+.text-empty-section{
+	text-align: center;
+	padding: 120px 0;
+	font-size: 18px;
+}
+.text-empty-info{
+	text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #d4d4d4;
+}

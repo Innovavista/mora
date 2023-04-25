@@ -1,0 +1,276 @@
+.servicio-tablero-productos-por-dia-dia {
+	margin-bottom: 25px;
+
+	&-cabecera {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		padding: 10px;
+		background: linear-gradient(90deg, #839aec 0%, #aec9ff 100%);
+		border-radius: 5px;
+		margin-bottom: 15px;
+		@include animacion(checkShow, 0.3s);
+	}
+
+	&-titulo {
+		font-size: 16px;
+		font-weight: 500;
+		margin: 0;
+		color: #fff;
+
+		&-boton {
+			position: absolute;
+			right: 10px;
+			border: 0;
+			background: #d3e0fd;
+			border-radius: 5px;
+			width: 24px;
+			height: 24px;
+			line-height: 26px;
+			font-size: 14px;
+			padding: 0;
+			color: #7a92eb;
+			transition: 0.2s ease all;
+			cursor: pointer;
+
+			&:hover {
+				background: #e2ebfe;
+				color: #6884e8;
+			}
+		}
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+
+	&-linea {
+		background: #f5f6fa;
+		border: 2px solid #fff;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		opacity: 1;
+
+		&.animada {
+			@include animacion(zoomIn, 0.3s);
+			animation-fill-mode: backwards;
+			-webkit-animation-fill-mode: backwards;
+			animation-delay: 0.3s;
+		}
+
+		&-cabecera {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background: #fff;
+			padding: 10px;
+			min-height: 65px;
+		}
+
+		&-nombre {
+			font-size: 14px;
+			line-height: 20px;
+			padding-right: 5px;
+			color: #606573;
+			margin: 0;
+		}
+
+		&-cuerpo {
+			padding: 26px 20px;
+		}
+
+		&-imagen {
+			max-width: 54px;
+			height: auto;
+			border-radius: 50%;
+			border: 2px solid #fff;
+		}
+
+		&-imagen-placeholder {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 54px;
+			width: 54px;
+			border-radius: 50%;
+			background: #eee;
+			border: 2px solid #fff;
+			font-size: 24px;
+			color: #9299a2;
+		}
+
+		&-cantidad-contenedor {
+			text-align: center;
+		}
+
+		&-cantidad {
+			display: block;
+			font-size: 28px;
+			line-height: 24px;
+			font-weight: 700;
+			margin-bottom: 5px;
+			color: #5f6786;
+		}
+
+		&-cantidad-texto {
+			font-size: 13px;
+			color: #9899b3;
+		}
+
+		&-info-boton {
+			background: transparent;
+			border: 0;
+			font-size: 21px;
+			position: relative;
+			top: -10px;
+			color: #a2b1d2;
+			cursor: pointer;
+			transition: 0.3s ease background;
+
+			&:hover {
+				color: #8ca1ee;
+			}
+		}
+
+		&-info {
+			padding: 5px;
+			border-color: #f5f6fa;
+		}
+
+		&-info-tabla {
+			margin: 0;
+			font-size: 13px;
+			border: 0;
+			color: #606573;
+
+			&.table td,
+			&.table th {
+				border-right: 1px solid #efefef;
+				border-left: 1px solid #efefef;
+			}
+		}
+
+		&-info-descargar {
+			background: transparent;
+			border: 0;
+			color: #a2b8df;
+			font-size: 16px;
+			cursor: pointer;
+			&:hover {
+				color: #8ca1ee;
+			}
+		}
+
+		&-observaciones-boton {
+			position: absolute;
+			right: 3px;
+			bottom: -23px;
+			border: 0;
+			text-align: center;
+			display: flex;
+			background: #bbc2dd;
+			padding: 5px;
+			min-width: 30px;
+			align-items: center;
+			justify-content: center;
+			border-radius: 8px;
+			color: #fff;
+			cursor: pointer;
+			transition: 0.3s ease background;
+
+			&:hover {
+				background: #8ca1ee;
+			}
+		}
+
+		&-observaciones-boton-cantidad {
+			width: 16px;
+			height: 16px;
+			display: flex;
+			border-radius: 50%;
+			background: hsl(0deg 100% 72%);
+			color: #fff;
+			font-size: 8px;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			bottom: 13px;
+			right: -6px;
+			font-weight: 700;
+		}
+
+		&-observaciones {
+			width: 230px;
+			padding: 10px;
+			border-color: #f5f6fa;
+		}
+
+		&-observacion {
+			&-contenedor {
+				margin-bottom: 10px;
+			}
+
+			&-cabecera {
+				border-bottom: 1px solid #dde0ee;
+				padding-bottom: 5px;
+				margin-bottom: 10px;
+			}
+
+			&-servicio {
+				font-size: 14px;
+				font-weight: 500;
+				color: #606573;
+			}
+
+			&-lista {
+				padding-left: 25px;
+				font-size: 13px;
+				line-height: 15px;
+				color: #595e73;
+
+				> li {
+					border: 1px solid #ced0d9;
+					border-radius: 5px;
+					padding: 5px 8px;
+					margin-bottom: 10px;
+
+					> span:first-child {
+						font-weight: 500;
+					}
+				}
+			}
+
+			&-texto-autor {
+				display: block;
+				border-top: 1px solid #ced0d9;
+				padding-top: 3px;
+				margin-top: 5px;
+				text-align: right;
+				font-size: 11px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	.servicio-tablero-productos-por-dia-dia-linea {
+		&-cuerpo {
+			padding: 20px 35px;
+		}
+
+		&-imagen {
+			max-width: 68px;
+		}
+
+		&-imagen-placeholder {
+			width: 68px;
+			height: 68px;
+		}
+
+		&-observaciones-boton {
+			right: -5px;
+			bottom: -15px;
+		}
+	}
+}

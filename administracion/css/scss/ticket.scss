@@ -1,0 +1,269 @@
+.ticket{
+	max-width: 335px;
+    margin: 0 auto;
+    border: 2px solid #686868;
+    border-radius: 6px;
+	background: #fff;
+    padding: 18px;
+
+	&-header{
+		margin-bottom: 10px;
+		&-separador{
+			border-bottom: 1px solid #dcdcdc;
+			padding-bottom: 10px
+		}
+	}
+
+	&-logo{
+		max-width: 42px;
+		margin-right: 0;
+		height: auto;
+	}
+
+	&-title{
+		font-size: 11pt;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	&-lead{
+		text-align: center;
+		font-size: 12pt;
+	}
+
+	&-cuerpo{
+		&-subtitulo{
+			text-align: center;
+			font-size: 14pt;
+			font-weight: 700;
+			margin-bottom: 15px;
+		}
+		&-imagen-contenedor{
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		&-imagen-pie{
+			font-size: 10pt;
+			font-weight: 700;
+		}
+	}
+
+	&-dato{
+		color: #333;
+		font-size: 10pt;
+		span{
+			font-weight: 600;
+		}
+		&-secundario span{
+			font-weight: 400;
+		}
+		&-destacado span{
+			font-size: 12pt;
+			font-weight: 700;
+			text-transform: uppercase;
+			> span{
+				font-weight: 700;
+				margin-left: 5px;
+			}
+		}
+		&-chico span{
+			letter-spacing: 0.3px;
+			font-weight: 400;
+			font-size: 8pt;
+		}
+	}
+
+	&-tabla{
+		width: 100%;
+		td{
+			padding: 5px 5px;
+			vertical-align: middle;
+		}
+		label{
+			margin: 0;
+		}
+	}
+
+	&-tabla-datos{
+		border: 1px solid #d4d4d4;
+		border-radius: 5px;
+		td{
+			border-bottom: 1px solid #d4d4d4;
+		}
+	}
+
+	&-tabla-invisible{
+		border: 0;
+		td{
+			border: 0;
+		}
+	}
+
+	&-tabla-condensed td {
+		padding: 1px 5px;
+	}
+
+	&-tabla-lineas{
+		border: 0;
+		font-size: 9pt;
+		th{
+			font-weight: 500;
+			vertical-align: bottom;
+		}
+		td{
+			padding: 10px 5px;
+			vertical-align: bottom;
+			border: 0;
+		}
+	}
+
+	&-tabla-subtotal td{
+		font-size: 10pt;
+		span{
+			margin-left: 5px;
+			font-weight: 600;
+		}
+	}
+
+	&-bloque-separador{
+		border-top: 1px dashed #989898;
+		height: 1px;
+		width: 100%;
+		margin: 15px 0;
+	}
+
+	&-imprimir{
+		border-radius: 3px;
+		background: #006187;
+		border: 0;
+		cursor: pointer;
+		padding: 4px 22px;
+		font-weight: 700;
+		font-size: 13px;
+		color: #fff;
+		&:hover{
+			background: lighten(#006187, 10%);
+		}
+	}
+
+	&-imprimir-contenedor{
+		text-align: center;
+		margin-top: 12px;
+	}
+
+	&-pie{
+		p{
+			margin: 0;
+			margin-top: 12px;
+			font-size: 11pt;
+			text-align: center;
+		}
+	}
+
+	&-label-contenedor{
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	&-label{
+		display: inline-block;
+		margin: 0;
+		padding: 5px 10px;
+		background: #eee;
+		border-radius: 5px;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 13px;
+	}
+
+}
+
+@media screen and (min-device-width: 940px) and (max-device-width: 960px)
+and (min-device-height: 300px) and (max-device-height: 600px) {
+	.ticket{
+
+		&-cuerpo{
+			&-subtitulo{
+				font-size: 13px;
+			}
+			&-imagen{
+				max-width: 120px;
+			}
+		}
+
+		&-dato{
+			font-size: 9px;
+		}
+
+		&-pie p{
+			font-size: 12px;
+		}
+
+		&-imprimir-contenedor{
+			margin-top: 9px;
+		}
+
+	}
+}
+
+@media print {
+	html, body{
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.ticket-imprimir-contenedor{
+		display: none;
+	}
+	.ticket-contenedor{
+		margin-left: 1mm;
+		margin-right: 1mm;
+	}
+	.ticket{
+		margin-left: 0;
+		margin-right: 0;
+		border: 0;
+		width: 108mm;
+		max-width: none;
+		&-ticket-logo{
+			max-width: 24mm;
+		}
+		&-dato{
+			font-size: 12pt;
+		}
+		&-pie p{
+			font-size: 16pt;
+		}
+		&-tabla-datos{
+			width: 64mm;
+			margin: 0 auto;
+		}
+		&-cuerpo-subtitulo{
+			width: 80mm;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 17pt;
+		}
+		&-cuerpo-imagen{
+			width: 50mm;
+			height: 50mm;
+		}
+		&-cuerpo-imagen-pie{
+			display: block;
+			font-size: 13pt;
+			margin-top: 5px;
+		}
+	}
+	.ticket-contenedor-normal{
+		margin-left: 3mm;
+		margin-right: 3mm;
+		.ticket{
+			width: 98mm;
+		}
+	}
+}
+
+@page {
+	size: auto;
+	margin: 0mm;
+}

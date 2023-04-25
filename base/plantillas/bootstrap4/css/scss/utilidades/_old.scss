@@ -1,0 +1,51 @@
+/*------ Estilos de Bootstrap 3 ------*/
+
+.visible-xs{
+	display: block;
+}
+.hidden-xs{
+	display: none;
+}
+.col-xs-12{
+	flex: 100%;
+}
+.well{
+	min-height: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #eef2f9;
+    border: thin solid #eef2f9;
+    border-radius: 3px;
+    box-shadow: none;
+}
+.card-configuraciones .panel-heading{
+	font-size: em(20px);
+}
+
+@media (min-width: 768px) {
+	.visible-xs{
+		display: none;
+	}
+	.visible-sm{
+		display: block;
+	}
+	.hidden-xs{
+		display: block;
+	}
+	.cuerpo-barra-listado .hidden-xs{
+		display: inline-block;
+	}
+	.hidden-sm{
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.visible-sm{
+		display: none;
+	}
+	.hidden-sm{
+		display: block;
+	}
+}
+

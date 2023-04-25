@@ -1,0 +1,28 @@
+.imputaciones-recibo {
+	.contenedor-imputaciones {
+		.card-title {
+			span:nth-child(2) {
+				float: right;
+			}
+		}
+		.alinear {
+			text-align: center;
+		}
+		td {
+			white-space: nowrap;
+		}
+		.boton-desimputar {
+			cursor: pointer;
+			background: transparent;
+			border: none;
+		}
+		.comprobantes {
+			.totalImputar {
+				text-align: right;
+			}
+			input {
+				min-width: 120px;
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+.produccion-calendario .calendario-dia-pasado {
+	opacity: 1;
+
+	.calendario-dia-cabecera,
+	.calendario-dia-asignaciones {
+		opacity: 0.55;
+	}
+}

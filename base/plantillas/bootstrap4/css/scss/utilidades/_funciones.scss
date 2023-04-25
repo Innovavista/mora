@@ -1,0 +1,5 @@
+@use 'sass:math';
+/*------ Calculador de EMs ------*/
+@function em($target, $context: $base-font-size) {
+	@return math.div($target, $context) * 1em;
+}

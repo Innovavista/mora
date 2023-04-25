@@ -1,0 +1,96 @@
+.servicio-comensal-nuevo-sidebar {
+	width: 500px;
+	background: #fff;
+	margin-right: 30px;
+	border-radius: 20px;
+	border: 2px solid #fff;
+	transition: width 0.3s ease;
+
+	&-cabecera {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 20px;
+		background: #f5f6fa;
+		border-top-right-radius: 20px;
+		border-top-left-radius: 20px;
+	}
+
+	&-titulo {
+		margin: 0;
+		font-size: 16px;
+		color: #606573;
+	}
+
+	&-cuerpo {
+		padding: 20px 15px;
+	}
+
+	&-busqueda {
+		&-contenedor {
+			position: relative;
+			margin-bottom: 20px;
+		}
+
+		&-input {
+			width: 100%;
+			border: 1px solid #c5c5c5;
+			padding: 8px 10px;
+			padding-right: 30px;
+			border-radius: 5px;
+
+			&:hover,
+			&:focus {
+				border-color: #8c8c8c;
+			}
+		}
+
+		&-icono {
+			position: absolute;
+			right: 12px;
+			top: 0;
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			font-size: 18px;
+			color: #908989;
+		}
+	}
+
+	&-comensales {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-height: calc(100vh - 300px);
+		min-height: 165px;
+		overflow: auto;
+		overflow-x: hidden;
+
+		.servicio-comensal-nuevo-comensal-boton.quitar {
+			display: none;
+		}
+
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #f1f1f1;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: rgb(223, 223, 223);
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background: rgb(187, 187, 187);
+		}
+	}
+
+	&-comensales-vacio {
+		text-align: center;
+		font-size: 13px;
+		color: #606573;
+		padding-top: 10px;
+	}
+}

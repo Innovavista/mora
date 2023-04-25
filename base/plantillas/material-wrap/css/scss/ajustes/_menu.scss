@@ -1,0 +1,85 @@
+$menu-item_font-size: 13px;
+$nav-sub-menu-background: #f3f3f3;
+$menu-active-border-style: 3px solid #71b6f9;
+
+%menu-item-primer-nivel-activo {
+	color: #71b6f9;
+	border-left: $menu-active-border-style;
+	border-left-color: #71b6f9;
+	background-color: inherit;
+}
+
+%menu-item-nivel-interno-activo {
+	color: #3c3c3c;
+	background-color: inherit;
+}
+
+// Editamos fuente colores y fondos de los menu items.
+body #app_wrapper#app_wrapper #app_sidebar-left #app_main-menu-wrapper .nav-pills
+{
+	// Items del primer nivel del menú
+	> li {
+		a {
+			font-size: $menu-item_font-size;
+		}
+
+		i {
+			color: lighten(#688696, 10%);
+		}
+
+		&.active, &.open {
+			> a, >a:focus {
+				@extend %menu-item-primer-nivel-activo;
+			}
+		}
+
+		> a:hover {
+			@extend %menu-item-primer-nivel-activo;
+		}
+	}
+
+	.nav-sub {
+		background: #f3f3f3;
+		// Items de los niveles internos
+		>li {
+			> a {
+				border-left-width: 0px;
+			}
+			&.active, &.open {
+				> a, >a:focus {
+					@extend %menu-item-nivel-interno-activo;
+				}
+			}
+
+			> a:hover {
+				@extend %menu-item-nivel-interno-activo;
+			}
+		}
+	}
+
+	// Quitamos el indicador de menú abierto por defecto
+	.nav-dropdown {
+
+		&.active>.nav-sub {
+			border-left: none;
+			border-left-width: 0px;
+		}
+
+		>a, &.open>a {
+			&:before, &:after {
+				content: none;
+			}
+		}
+		.nav-dropdown-indicador {
+			@include single-transition(transform, .15s);
+			position: absolute;
+			right: 14px;
+			display: inline-block;
+			line-height: 23px;
+			font-size: 10px;
+		}
+		&.open > a .nav-dropdown-indicador {
+			@include rotate(90deg);
+		}
+	}
+}

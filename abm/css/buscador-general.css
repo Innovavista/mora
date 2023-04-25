@@ -1,0 +1,40 @@
+
+#buscador-general-tablas{
+	padding-top: 30px;
+}
+#buscador-general-tablas div[data-tabla-contenedor] {
+	position: relative;
+}
+
+.processing {
+	background: url("../../img/zf-table/ajax-loader.gif") no-repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 15px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0.5em !important;
+    width: 128px;
+}
+
+.buscador-general-filtro-entidad-titulo{
+	position: relative;
+	padding: 0px;
+}
+.buscador-general-filtro-entidad-titulo > .checkbox{
+	margin: 0px;
+}
+.buscador-general-filtro-entidad-titulo > .checkbox > label{
+	display: block;
+	padding: 10px 15px;
+	padding-left: 35px;
+}
+.buscador-general-filtro-entidad-expandir{
+	position: absolute;
+	right: 10px;
+	top: 11px;
+}

@@ -1,0 +1,75 @@
+.servicio-turnos-modificacion-publicos {
+	&-subtitulo {
+		color: #737272;
+	}
+
+	&-turno {
+		& {
+			border: 1px solid #f5f6fa;
+			border-radius: 7px !important;
+			box-shadow: none !important;
+		}
+
+		& &-fecha {
+			display: flex;
+			align-items: center;
+			border-top-right-radius: 7px;
+			border-top-left-radius: 7px;
+			background: #f5f6fa;
+			color: #636f8b;
+			overflow: hidden;
+			border-bottom: 0 !important;
+
+			> span {
+				font-size: 17px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&-platos {
+		align-items: stretch;
+		justify-content: space-between;
+
+		&-viejos,
+		&-nuevos {
+			flex: 1;
+		}
+
+		&-separador {
+			display: flex;
+			align-items: center;
+			margin: 0 15px !important;
+			font-size: 24px !important;
+			color: #8294bf !important;
+		}
+
+		&-plato {
+			display: flex;
+			align-items: center;
+			border-radius: 5px;
+			border: 1px solid #f5f6fa;
+			padding: 3px 8px;
+			margin-bottom: 7px;
+			height: 36px;
+		}
+	}
+
+	&-reservas-aviso {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+		font-size: 11px;
+		border-top: 1px solid #f5f6fa;
+		padding: 6px 15px;
+		color: #636f8b;
+
+		&.vacio {
+			color: #a5a5ad;
+		}
+
+		> span:last-child {
+			font-weight: 500;
+		}
+	}
+}

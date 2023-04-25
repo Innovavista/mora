@@ -1,0 +1,32 @@
+.icono-linea{
+	width: 25px;
+	min-width: 25px;
+	font-size: 14px;
+	text-align: center;
+	margin-right: 10px;
+	border: 1px solid;
+	border-radius: 50%;
+	height: 25px;
+	padding: 5px;
+	&-naranja{
+		color: #ff9d5c;
+	}
+	&-azul{
+		color: #5c82ff;
+	}
+	&-rojo{
+		color: #ff5c67;
+	}
+	&-gris{
+		color: #aca8a8;
+	}
+	&-verde{
+		color: #32ba53;
+	}
+	&-rosa{
+		color: #d74ed5;
+	}
+	&-cyan{
+		color: #32baa5;
+	}
+}

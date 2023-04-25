@@ -1,0 +1,15 @@
+.abm-listado-filtros{
+	padding-top: 20px;
+	&-contenido{
+		padding: 10px 15px;
+	}
+	&-titulo{
+		font-size: 17px;
+		margin: 0;
+		padding: 8px 0 17px 0;
+		font-weight: 600;
+	}
+	label{
+		color: #696969;
+	}
+}

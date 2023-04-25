@@ -1,0 +1,104 @@
+.mercaderia-resultado{
+	padding: 9px;
+	margin: 0;
+	border-radius: 6px;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #797979;
+	border: 2px solid #eee;
+	transition: all ease-in-out .1s;
+	&:hover{
+		cursor: pointer;
+	}
+	> span:first-child{
+		color: #4d4d4d;
+		font-weight: 500;
+	}
+	> span:last-child{
+		color: #818181;
+	}
+}
+
+.mercaderia-ingreso-buscador .form-input-custom-input{
+	border-color: #ced0f8;
+}
+.mercaderia-ingreso-buscador .form-input-custom-input.selected{
+	border: 2px solid #ced0f8;
+}
+.mercaderia-ingreso-buscador .componente-buscador-resultados{
+	overflow: hidden;
+    overflow-y: visible;
+    max-height: 550px;
+}
+
+.componente-buscador-resultado.selected .mercaderia-resultado,
+.mercaderia-resultado:hover{
+	background: #f1f0ff;
+	border: 2px solid #ced0f8;
+}
+
+.mercaderia-ingreso-resumen-tabla{
+	tr{
+		font-size: 15px;
+		color: #747474;
+		animation-duration: .5s;
+	}
+	input{
+		color: #747474;
+	}
+	.placeholder-lista-item-texto{
+		left: 0;
+	}
+	tr > td:first-child > span{
+		> span:first-child{
+			color: #4d4d4d;
+			font-weight: 500;
+		}
+		> span:last-child{
+			color: #818181;
+		}
+	}
+}
+
+.mercaderia-ingreso-resumen-cantidad,
+.mercaderia-ingreso-resumen-precio,
+.mercaderia-ingreso-resumen-descripcion{
+	max-width: 150px;
+	padding: 5px;
+	transition: all .1s ease;
+	&:focus{
+		border-width: 2px;
+		border-color: #9da1f8;
+	}
+}
+
+.mercaderia-ingreso-resumen-descripcion{
+	max-width: 220px;
+}
+
+.mercaderia-ingreso-resumen-remover{
+	border: 0;
+	background: transparent;
+    font-size: 20px;
+    color: #ccc;
+	cursor: pointer;
+	&:hover{
+		color: #fa5858;
+	}
+}
+
+.mercaderia-total{
+	display: flex;
+    justify-content: space-between;
+	padding: 15px 10px;
+    border: 2px dashed #ccc;
+    font-weight: 600;
+    font-size: 21px;
+    color: #474747;
+}
+
+#proveedor-modal, #deposito-modal {
+	button[type=submit] {
+		display: none;
+	}
+}

@@ -1,0 +1,76 @@
+.servicio-remito-producto {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #eef0f6;
+	padding: 6px 10px;
+	border-radius: 12px;
+	margin-bottom: 10px;
+	cursor: pointer;
+
+	&:hover {
+		border-color: #ccf5dd;
+	}
+
+	&-contenido {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		margin-right: 5px;
+	}
+
+	&-imagen {
+		width: 34px;
+		height: 34px;
+		border-radius: 10px;
+	}
+
+	&-imagen-placeholder {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 34px;
+		width: 34px;
+		border-radius: 10px;
+		background: #eee;
+		font-size: 18px;
+		color: #9299a2;
+	}
+
+	&-nombre {
+		font-size: 13px;
+		margin-left: 10px;
+		color: #484f66;
+	}
+
+	&-nombre-contenedor {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+
+	&-precio {
+		font-size: 11px;
+		background: #e1f9eb;
+		padding: 0 7px;
+		color: #2caf63;
+		border-radius: 5px;
+	}
+
+	&-accion-agregar {
+		background: transparent;
+		border: 0;
+		width: 24px;
+		height: 24px;
+		border-radius: 5px;
+		font-size: 21px;
+		color: #aaeec6;
+		cursor: pointer;
+	}
+
+	&:hover &-accion-agregar {
+		color: #7fe6aa;
+		background: #eafbf1;
+	}
+}

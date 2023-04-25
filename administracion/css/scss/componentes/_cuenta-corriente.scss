@@ -1,0 +1,53 @@
+.cc{
+	&-saldo-previo{
+		font-size: 20px;
+		font-weight: 600;
+		color: #308c93;
+		margin: 0;
+	}
+	&-saldo-actual{
+		font-size: 20px;
+		font-weight: 600;
+		margin: 0;
+		color: #fff;
+	}
+	&-saldo-actual-card.card{
+		margin: 20px 0;
+		background: #3ac793;
+		box-shadow: -1px 1px 7px rgba(0,0,0,.3);
+		border: 0;
+	}
+	&-movimientos-tabla-contenedor{
+		max-height: 400px;
+	}
+	&-movimientos-concepto,
+	&-movimientos-saldo{
+		font-weight: 500;
+	}
+	&-movimientos-debito{
+		color: #ff2929;
+	}
+	&-movimientos-credito{
+		color: #21a641;
+	}
+	&-movimiento-anulado > td{
+		position: relative;
+		opacity: .75;
+	}
+	&-loader{
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 67px;
+		color: #28c188;
+		background: rgba(255,255,255,.5);
+		z-index: 5;
+	}
+	&-row-saldo {
+		border-top: 2px solid #efefef !important;
+	}
+}

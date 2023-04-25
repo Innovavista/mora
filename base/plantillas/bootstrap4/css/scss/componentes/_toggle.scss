@@ -1,0 +1,142 @@
+.togglebutton{
+	vertical-align: middle;
+}
+
+.togglebutton, .togglebutton label, .togglebutton input, .togglebutton .toggle {
+	user-select: none;
+}
+
+.togglebutton label {
+	display: inline-block;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.form-group.is-focused .togglebutton label {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+.form-group.is-focused .togglebutton label:focus, .form-group.is-focused .togglebutton label:hover {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+fieldset[disabled] .form-group.is-focused .togglebutton label {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+.togglebutton label input[type=checkbox] {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.togglebutton label .toggle {
+	text-align: left;
+	margin-left: 5px;
+}
+
+.togglebutton label .toggle,
+.togglebutton label input[type=checkbox][disabled] + .toggle {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 15px;
+	background-color: #899cb2;
+	border-radius: 15px;
+	margin-right: 15px;
+	transition: background 0.3s ease;
+	vertical-align: middle;
+	overflow: visible;
+}
+
+.togglebutton label .toggle:after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 20px;
+	position: relative;
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+	left: -5px;
+	top: -3px;
+	border: 1px solid #788da5;
+	transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
+}
+
+.togglebutton label input[type=checkbox][disabled] + .toggle:after,
+.togglebutton label input[type=checkbox][disabled]:checked + .toggle:after {
+	background-color: #899cb2;
+}
+
+.togglebutton label input[type=checkbox] + .toggle:active:after,
+.togglebutton label input[type=checkbox][disabled] + .toggle:active:after {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.togglebutton label input[type=checkbox]:checked + .toggle:after {
+	left: 15px;
+}
+
+.togglebutton label input.toggle-info[type=checkbox]:checked + .toggle {
+	background-color: rgba(66, 165, 245, 0.7);
+}
+
+.togglebutton label input.toggle-info[type=checkbox]:checked + .toggle:after {
+	border-color: #42a5f5;
+}
+
+.togglebutton label input.toggle-info[type=checkbox]:checked + .toggle:active:after {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(66, 165, 245, 0.1);
+}
+
+.togglebutton label input.toggle-warning[type=checkbox]:checked + .toggle {
+	background-color: rgba(254, 192, 7, 0.7);
+}
+
+.togglebutton label input.toggle-warning[type=checkbox]:checked + .toggle:after {
+	border-color: #FEC007;
+}
+
+.togglebutton label input.toggle-warning[type=checkbox]:checked + .toggle:active:after {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(254, 192, 7, 0.1);
+}
+
+.togglebutton label input.toggle-success[type=checkbox]:checked + .toggle {
+	background-color: rgba(38, 166, 154, 0.7);
+}
+
+.togglebutton label input.toggle-success[type=checkbox]:checked + .toggle:after {
+	border-color: #26a69a;
+}
+
+.togglebutton label input.toggle-success[type=checkbox]:checked + .toggle:active:after {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1);
+}
+
+.togglebutton label input.toggle-default[type=checkbox]:checked + .toggle {
+	background-color: rgba(157, 174, 196, 0.7);
+}
+
+.togglebutton label input.toggle-default[type=checkbox]:checked + .toggle:after {
+	border-color: #9daec4;
+}
+
+.togglebutton label input.toggle-default[type=checkbox]:checked + .toggle:active:after {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(157, 174, 196, 0.1);
+}
+
+.togglebutton label .toggle.ajax::before{
+	animation: zmdi-spin 1.5s infinite linear;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    content: '\f1b9';
+    text-align: center;
+    color: #aaa;
+    position: absolute;
+    z-index: 99;
+    left: .4px;
+}
+.togglebutton label input[type=checkbox]:checked + .toggle.ajax::before{
+	right: .4px;
+	left: auto;
+}

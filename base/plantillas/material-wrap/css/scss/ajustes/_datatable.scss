@@ -1,0 +1,112 @@
+#additionalParams .form-group{
+	margin-top: 0px;
+}
+.tabla-operaciones.btn-group{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.contendor-botones .btn,
+.tabla-operaciones .btn{
+	min-width: 0px;
+	font-size: 14px;
+	background: none;
+	padding: 0px;
+	padding-left: 10px;
+	box-shadow: none;
+	color: #607188;
+	transition: all 0.25s ease-in-out;
+	&:hover,
+	&:focus{
+		color: #455162;
+		background: none;
+		box-shadow: none;
+	}
+	&::first-child{
+		padding-left: 0px;
+	}
+}
+
+.contendor-botones .btn.btn-default,
+.tabla-operaciones .btn.btn-default{
+	color: lighten($brand-default, 20%);
+	&:hover,
+	&:focus,
+	&:active{
+		color: $brand-default;
+	}
+}
+
+.contendor-botones .btn.btn-primary,
+.tabla-operaciones .btn.btn-primary{
+	color: lighten($brand-primary, 20%);
+	&:hover,
+	&:focus,
+	&:active{
+		color: $brand-primary;
+	}
+}
+
+.contendor-botones .btn.btn-info,
+.tabla-operaciones .btn.btn-info{
+	color: lighten($brand-info, 20%);
+	&:hover,
+	&:focus,
+	&:active{
+		color: $brand-info;
+	}
+}
+
+.contendor-botones .btn.btn-success,
+.tabla-operaciones .btn.btn-success{
+	color: lighten($brand-success, 20%);
+	&:hover,
+	&:focus,
+	&:active{
+		color: $brand-success;
+	}
+}
+
+.contendor-botones .btn.btn-warning,
+.tabla-operaciones .btn.btn-warning{
+	color: $brand-warning;
+	&:hover,
+	&:focus,
+	&:active{
+		color: darken($brand-warning, 20%);
+	}
+}
+.contendor-botones .btn.btn-danger,
+.tabla-operaciones .btn.btn-danger{
+	color: lighten($brand-danger, 20%);
+	&:hover,
+	&:focus,
+	&:active{
+		color: $brand-danger;
+	}
+}
+
+.tabla-operaciones .btn > i{
+	padding: 0px;
+}
+.dataTables_filter .form-group,
+.dataTable thead .form-group{
+	width: 100%;
+	margin: 0px;
+}
+table.dataTable thead .sortable::after,
+table.dataTable thead .sortable::before{
+	display: none;
+}
+table.dataTable .togglebutton label .toggle{
+	overflow: visible;
+}
+table.dataTable .togglebutton label .toggle.ajax::after{
+	animation: fa-spin 2s infinite linear;
+	font-family: 'FontAwesome';
+	content: "\f021";
+	text-align: center;
+	color: #aaa;
+}
+.itemPerPage .filter-option {
+	padding-right: 15px;
+}

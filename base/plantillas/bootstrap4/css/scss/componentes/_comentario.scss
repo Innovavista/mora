@@ -1,0 +1,139 @@
+.comentario-contenedor{
+	display: flex;
+}
+.comentario-comentario{
+	display: flex;
+    position: relative;
+    padding: 20px;
+    padding-top: 10px;
+    line-height: 1.4;
+    background: #ededed;
+    border-radius: 10px;
+    flex-grow: 10;
+}
+.comentario-comentario::before{
+	position: absolute;
+	top: 20px;
+	left: -10px;
+	content: " ";
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-left: 0px;
+	border-right-color: #ededed;
+	overflow: hidden;
+}
+.comentario-contenido{
+	flex-grow: 6;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.comentario-adicionales{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	text-align: right;
+}
+.comentario-boton{
+	padding: 0px;
+	margin: 0px;
+	margin-top: auto;
+	margin-left: auto;
+	background: none;
+	border: 0px;
+	font-size: 0.82em;
+	cursor: pointer;
+	&:hover{
+		color: #6590fe !important;
+	}
+}
+.comentario-boton > i{
+	/* Le bajamos la intensidad al Ã­cono */
+	opacity: 0.75;
+}
+.comentario-respuestas,
+.comentario-placeholder-respuesta{
+	padding-top: 20px;
+	padding-left: 84px;
+}
+.comentario-autor{
+	font-size: 1.1em;
+	font-weight: bolder;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.comentario-fecha-hora{
+	font-size: 0.92em;
+	line-height: 1.2;
+	margin-left: auto;
+}
+.comentario-fecha-hora-hace{
+	display: block;
+	font-size: 0.80em;
+}
+.comentario-foto{
+	width: 64px;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+.comentario-formulario .form-group{
+	margin-top: 0;
+}
+
+/***********************************************************
+	Comentario chico
+***********************************************************/
+.comentario-chico{
+	display: block;
+	margin-bottom: 10px;
+}
+.comentario-chico .comentario-comentario{
+	display: block;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 0.75em;
+}
+.comentario-chico .comentario-comentario::before{
+	top: -5px;
+	left: 15px;
+	border: 5px solid transparent;
+	border-top: 0px;
+	border-bottom-color: #f5f5f5;
+}
+/***********************************************************
+	Fin comentario chico
+***********************************************************/
+/***********************************************************
+	Adjuntos
+***********************************************************/
+.comentario-archivos{
+	display: flex;
+	padding-top: 20px;
+}
+.comentario-archivo{
+	margin-right: 20px;
+	text-align: center;
+}
+.comentario-archivo:last-child{
+	margin-right: 0px;
+}
+.comentario-archivo-imagen{
+	display: block;
+}
+.comentario-archivo-archivo{
+	display: block;
+	font-size: 0.75em;
+}
+.comentario-archivo-archivo > i{
+	margin-right: 6px;
+}
+.comentario-archivo-descargar{
+	font-size: 0.75em;
+	opacity: 0.75;
+}
+.comentario-archivo-archivo + .comentario-archivo-descargar{
+	display: none;
+}
+/***********************************************************
+	Fin adjuntos
+***********************************************************/

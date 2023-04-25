@@ -1,0 +1,23 @@
+.modal.fade.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.modal.fade.in{
+    opacity: 1;
+}
+.modal-title{
+    font-size: 1.4rem;
+}
+.modal-subtitle{
+    font-size: em(16px);
+}
+.modal-body{
+	z-index: 1;
+}
+.modal .checkbox{
+    font-size: em(13px);
+    margin: 0;
+}
+.bootstrap-select-mobil-modal-body .bootstrap-select-mobil-menu{
+	transform: none !important;
+}

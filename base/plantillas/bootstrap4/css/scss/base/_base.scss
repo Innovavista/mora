@@ -1,0 +1,32 @@
+body{
+	font-family: $font-family-primaria;
+	font-weight: $font-weight-regular;
+	font-size: $base-font-size;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	color: $color-body;
+	background-color: $blanco;
+}
+html *{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*{
+	box-sizing: border-box;
+	outline: 0 !important;
+}
+a{
+	color: #2196F3;
+	text-decoration: none;
+}
+a:hover,
+a:focus{
+	color: #0d8aee;
+	text-decoration: none;
+}
+.hidden{
+	display: none;
+}
+
+

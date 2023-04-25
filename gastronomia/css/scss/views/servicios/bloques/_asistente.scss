@@ -1,0 +1,139 @@
+.asistente {
+	&-contenedor {
+		display: flex;
+		align-items: center;
+		position: fixed;
+		right: 65px;
+		bottom: 0;
+		z-index: 10;
+
+		&.oculto {
+			display: none;
+		}
+	}
+
+	&-persona {
+		position: relative;
+		bottom: -50px;
+		max-width: 185px;
+		cursor: pointer;
+		animation-name: asistenteMostrar;
+		animation-duration: 0.5s;
+	}
+
+	&-mensaje {
+		max-width: 350px;
+		font-size: 15px;
+		background: #fff;
+		padding: 25px 30px;
+		border-radius: 51px;
+		overflow: hidden;
+		overflow-y: auto;
+		margin-right: 10px;
+		line-height: 22px;
+		color: #333;
+		border: 6px solid #333;
+		font-weight: 500;
+		opacity: 1;
+
+		> div {
+			animation-name: mensajeTexto;
+			animation-duration: 0.5s;
+		}
+
+		&::-webkit-scrollbar {
+			width: 3px;
+		}
+
+		/* Track */
+		&::-webkit-scrollbar-track {
+			background: #f1f1f1;
+		}
+
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: rgb(223, 223, 223);
+		}
+
+		/* Handle on hover */
+		&::-webkit-scrollbar-thumb:hover {
+			background: rgb(187, 187, 187);
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin: 15px 0;
+		}
+	}
+
+	&-mensaje-contenedor {
+		position: relative;
+		animation-name: mensajeMostrar;
+		animation-duration: 0.3s;
+		animation-delay: 0.3s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+		top: -90px;
+		right: -30px;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			right: 20px;
+			bottom: -15px;
+			width: 40px;
+			height: 40px;
+			background-color: #fff;
+			border: 6px solid #333;
+			-webkit-border-radius: 28px;
+			-moz-border-radius: 28px;
+			border-radius: 28px;
+		}
+
+		&::after {
+			width: 20px;
+			height: 20px;
+			right: 20px;
+			bottom: -22px;
+			-webkit-border-radius: 18px;
+			-moz-border-radius: 18px;
+			border-radius: 18px;
+		}
+	}
+}
+
+@keyframes asistenteMostrar {
+	0% {
+		bottom: -240px;
+		transform: scale(1);
+	}
+	50% {
+		bottom: -40px;
+		transform: scale(1.05);
+	}
+	100% {
+		bottom: -50px;
+		transform: scale(1);
+	}
+}
+
+@keyframes mensajeMostrar {
+	0% {
+		transform: scale(0.7);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes mensajeTexto {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

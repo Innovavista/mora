@@ -1,0 +1,21 @@
+.pdf-tabla {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	thead {
+		display: table-header-group;
+	}
+	tfoot {
+		display: table-row-group;
+	}
+	tr {
+		page-break-inside: avoid;
+
+		&.anulado {
+			opacity: 0.5;
+		}
+	}
+	&-fondo-claro {
+		background-color: rgba(0,97,135,0.15);
+	}
+}

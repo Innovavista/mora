@@ -1,0 +1,59 @@
+/*
+    Created on : 25/08/2021, 13:16:04
+    Author     : Martín Ghiotti
+*/
+.seccion-orden-compra {
+	.filtros-cotizaciones {
+		.select-proveedor {
+			width: 220px !important;
+		}
+	}
+
+	.tabla-lineas {
+		width: 100%;
+		table-layout: fixed;
+		border-collapse: collapse;
+
+		thead {
+			color: black;
+			background: transparent !important;
+			tr:first-child {
+				background: #879799;
+                > th {
+                    color: white;
+                }
+			}
+			tr:nth-of-type(2) {
+				color: black;
+				background: rgba(0,97,135,0.05);
+				th {
+					font-weight: 100 !important;
+				}
+			}
+		}
+
+		.tabla-columna {
+
+			&-presentacion {
+				width: 370px;
+			}
+
+			&-quitar {
+				width: 38px;
+			}
+		}
+
+		.tabla-fila {
+			&-cabecera {
+				background: rgba(0,97,135,0.05);
+			}
+		}
+
+		.inputs {
+			background-color: white;
+			text-align: center;
+			width: 130px;
+		}
+	}
+}
+

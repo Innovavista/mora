@@ -1,0 +1,8 @@
+.franja-superior{
+	&-azul{
+		border-top: 5px solid $primary;
+	}
+	&-gris{
+		border-top: 5px solid $default;
+	}
+}

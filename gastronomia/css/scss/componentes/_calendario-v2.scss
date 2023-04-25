@@ -1,0 +1,206 @@
+.calendario-v2 {
+	.calendario-cabecera {
+		display: none;
+	}
+
+	.calendario-cabecera-dia-nombre {
+		text-align: right;
+		font-size: 17px;
+		font-weight: 600;
+		background: transparent;
+		padding-top: 0;
+		color: #6f7a88;
+	}
+
+	.calendario-dia-cabecera-corto {
+		text-transform: capitalize;
+	}
+
+	.calendario-dia {
+		width: 100%;
+		background: #f5f6fa;
+		border: 5px solid #fff;
+		border-radius: 13px;
+		padding-top: 0;
+
+		&-cabecera {
+			background: transparent;
+			font-size: 17px;
+			color: #636f8b;
+			padding: 9px 13px;
+			font-weight: 600;
+			height: auto;
+		}
+
+		&-acciones {
+			position: absolute;
+			text-align: left;
+			left: 7px;
+			top: 8px;
+			right: auto;
+			margin: 0;
+
+			&-toggle {
+				font-size: 21px;
+				padding: 0 10px;
+				color: #97a0b5;
+
+				&[aria-expanded="true"],
+				&:hover {
+					color: #839aec;
+				}
+			}
+
+			&-menu {
+				padding: 0;
+				border: 1px solid #e0e4f0;
+				&-opcion {
+					color: #6a7495;
+					border-bottom: 1px solid #ebf0ff;
+
+					&:hover {
+						background: #fafafa;
+						color: #353a4b;
+					}
+
+					> .zmdi,
+					> .fa {
+						font-size: 16px;
+						margin-right: 5px;
+					}
+				}
+
+				&-opcion:last-child {
+					border-bottom: 0;
+				}
+			}
+		}
+
+		&-asignaciones {
+			padding-top: 40px;
+		}
+
+		&-sin-entidad {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			font-size: 100px;
+			color: #eaecf5;
+		}
+
+		&-cancelado {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			overflow: hidden;
+			height: 100%;
+
+			&-texto {
+				position: relative;
+				font-weight: 700;
+				padding: 0 8px;
+				text-transform: uppercase;
+				font-size: 10px;
+				border-radius: 2px;
+				line-height: 18px;
+				color: #868fc6;
+				background: #eaecf5;
+				z-index: 1;
+			}
+
+			&-icono {
+				display: flex;
+				position: absolute;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+				font-size: 100px;
+				color: #eaecf5;
+			}
+		}
+
+		&-placeholder,
+		&-pasado {
+			display: none;
+		}
+	}
+
+	.calendario-dia-seleccionar-contenedor-absolute
+		.calendario-dia-seleccionar-boton {
+		padding: 2px 13px;
+		color: #91a0c3;
+
+		&:hover {
+			color: #49c2a4;
+		}
+	}
+}
+
+.calendario-v2-mes-control {
+	button:first-child {
+		order: 2;
+		margin-right: 10px;
+	}
+
+	button:last-child {
+		order: 3;
+	}
+
+	span {
+		font-size: 17px;
+		background: transparent;
+		padding: 0;
+		margin: 0;
+		margin-right: 15px;
+		color: #606573;
+		order: 1;
+	}
+
+	.calendario-mes-control-boton {
+		width: 28px;
+		height: 28px;
+		background: #fff;
+		line-height: 27px;
+
+		&:not(:disabled):hover {
+			background: #636f8b;
+			color: #fff;
+		}
+
+		&:disabled:hover {
+			cursor: default;
+		}
+	}
+}
+
+@media (min-width: 920px) {
+	.calendario-v2 {
+		.calendario-dia {
+			width: 50%;
+
+			&-placeholder,
+			&-pasado {
+				display: block;
+			}
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	.calendario-v2 {
+		.calendario-dia {
+			width: 14.2857%;
+		}
+
+		.calendario-cabecera {
+			display: flex;
+		}
+
+		.calendario-dia-cabecera-corto {
+			display: none;
+		}
+	}
+}

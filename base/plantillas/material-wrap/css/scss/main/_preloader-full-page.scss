@@ -1,0 +1,19 @@
+.preloader-container{
+    position: fixed;
+    z-index: 9999;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    text-align: center;
+}
+.preloader-container .preloader{
+	margin-top: 320px;
+}
+.preloader-container img{
+	max-width: 45px;
+    position: relative;
+    top: -50px;
+    left: -2px;
+}

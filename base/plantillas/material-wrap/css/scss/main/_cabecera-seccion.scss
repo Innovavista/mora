@@ -1,0 +1,83 @@
+@import "util/var";
+@import "util/mixins";
+
+$desktop-margin: 20px;
+
+@mixin flex-center-start {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.cabecera-seccion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: $md-blue-700;
+	width: 100%;
+
+	&-titulo {
+		color: $white-color;
+	}
+
+	&-breadcrumbs {
+
+		.breadcrumb {
+			margin-bottom: 10px
+		}
+	}
+
+	&-operaciones {
+		@include flex-center-start;
+		flex-wrap: wrap;
+
+
+		.btn, .btn-group {
+			margin-top: 0;
+		}
+		.btn-group {
+			@include flex-center-start;
+			margin-top: 10px;
+			flex-basis: 100%;
+		}
+	}
+
+
+	@include breakpoint(md) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: initial;
+		align-items: flex-start;
+
+		&-titulo {
+			order: 1;
+			max-width: 80%;
+			flex-shrink: 1;
+			margin-top: $desktop-margin;
+		}
+
+		&-breadcrumbs {
+			order: 3;
+			flex-basis: 100%;
+		}
+
+		&-operaciones {
+			margin-left: auto;
+			flex-shrink: 1;
+			text-align: right;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+			max-width: 50%;
+			order: 2;
+			margin-top: $desktop-margin;
+			.btn-group {
+				margin-top: 0;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+.servicio-estado {
+	display: inline-block;
+	text-align: center;
+	padding: 0 7px;
+	border-radius: 4px;
+	min-width: 65px;
+	font-weight: 700;
+	font-size: 11px;
+
+	&.verde {
+		background: linear-gradient(90deg, #74ea71 0%, #83ecbb 100%);
+		color: #fff;
+	}
+
+	&.rojo {
+		background: linear-gradient(90deg, #ea7171 0%, #ec8383 100%);
+		color: #fff;
+	}
+
+	&-lead {
+		display: block;
+		font-size: 11px;
+		color: #a7a4a4;
+	}
+}

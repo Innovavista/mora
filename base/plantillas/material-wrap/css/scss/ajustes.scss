@@ -1,0 +1,34 @@
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+//== Variables, Mixins, and Functions
+@import 'main/util/_var';
+@import 'main/util/_var-bootstrap';
+@import 'main/util/_var-mdb';
+@import 'main/util/_var-material-colors';
+@import 'main/util/_mixins';
+@import 'main/util/_functions';
+@import 'main/util/_helpers';
+//== Common
+@import 'main/_base';
+//== Colors, Gradient
+@import 'main/colors/_material-colors';
+@import 'main/colors/_mw-colors';
+//== Módulos
+@import "main/cabecera-seccion";
+@import "main/preloader-full-page";
+
+@import "ajustes/auxiliares";
+@import "ajustes/controles";
+@import "ajustes/datatable";
+@import "ajustes/formularios";
+@import "ajustes/generales";
+@import "ajustes/lista-doble";
+@import "ajustes/menu";
+@import "ajustes/tablas";
+@import "ajustes/uploader";
+@import "ajustes/card";
+
+@import "modulos/comentario";
+@import "modulos/estado";
+@import "modulos/lista-numerada";
+@import "modulos/persona";

@@ -1,0 +1,19 @@
+.servicio-mi-menu {
+	&-servicios {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.servicio-reservar-elemento {
+		margin: 0;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		border: 2px solid #fff;
+	}
+
+	.content-title .volver {
+		margin-right: 8px;
+		color: #6f7a88;
+	}
+}
