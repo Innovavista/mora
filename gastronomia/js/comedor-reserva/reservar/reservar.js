@@ -30,8 +30,7 @@ function koPantalla(json, opciones) {
                         title            : 'Sin precio asignado',
                         html             : '<p>No se puede realizar la reserva porque no se ha asignado precio, por favor comunicate con la administración de comedores.',
                         showCancelButton : false,
-                        onConfirmCallback: function () {
-                        }
+						onConfirmCallback: function() {}
                     });
                 }
                 valor = parseFloat(precioVigente.precio());
@@ -57,17 +56,13 @@ function koPantalla(json, opciones) {
         var title             = '';
         var type              = 'question';
         var showCancelButton  = true;
-        var onConfirmCallback = function () {
-            self.reservarTurno(turno);
-        };
+		var onConfirmCallback = function() { self.reservarTurno(turno); };
         var error             = false;
 
         if (valor > saldo) {
             title             = 'No tenés saldo suficiente';
             type              = 'error';
-            onConfirmCallback = function () {
-                return;
-            };
+			onConfirmCallback	= function() { return; };
             showCancelButton  = false;
             error             = true;
             htmlDatos.error   = error;
@@ -84,9 +79,7 @@ function koPantalla(json, opciones) {
             if (ahora.isAfter(fechaTurno)) {
                 title             = 'Este turno ha finalizado. No es posible reservar.';
                 type              = 'error';
-                onConfirmCallback = function () {
-                    return;
-                };
+				onConfirmCallback = function() { return; };
                 showCancelButton  = false;
                 error             = true;
                 htmlDatos.error   = error;
@@ -255,8 +248,7 @@ function koPantalla(json, opciones) {
         Alerta({
             html             : html,
             showCancelButton : false,
-            onConfirmCallback: function () {
-            }
+			onConfirmCallback: function() {}
         });
     };
 
@@ -267,8 +259,7 @@ function koPantalla(json, opciones) {
         Alerta({
             html             : html,
             showCancelButton : false,
-            onConfirmCallback: function () {
-            }
+			onConfirmCallback: function() {}
         });
     };
     //</editor-fold>
